@@ -46,7 +46,11 @@
               "id": "ptrackerid",
               "questionOptions": {
                 "concept": "163530AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "text"
+                "rendering": "text",
+                "usePreviousValueDisabled": "true",
+                "calculate": {
+                  "calculateExpression": "myValue = useFieldValue('latest_ptracker_number') : ''"
+                }
               },
               "behaviours": [
                 {
@@ -54,9 +58,25 @@
                   "required": "true",
                   "hide": {
                     "hideWhenExpression": "false"
-                  }
+                  },
+                  "validators": []
                 }
               ]
+            },
+            {
+              "label": "Latest Ptracker number",
+              "type": "obs",
+              "id": "latest_ptracker_number",
+              "questionOptions": {
+                "concept": "",
+                "rendering": "fixed-value",
+                "calculate": {
+                  "calculateExpression": "resolve(api.getLatestObs(patient.id, '163530AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '4362fd2d-1866-4ea0-84ef-5e5da9627440')).valueString"
+                }
+              },
+              "hide": {
+                "hideWhenExpression": "true"
+              }
             }
           ]
         }
