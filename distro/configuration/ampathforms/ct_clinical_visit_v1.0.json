@@ -8894,11 +8894,11 @@
       }
     },
     {
-      "label": "Viral Load Lab Result",
+      "label": "Lab results - Viral Load",
       "sections": [],
       "isSubform": "true",
       "subform": {
-        "name": "viral_load_results",
+        "name": "Viral Load Lab Result",
         "package": "hiv",
         "behaviours": [
           {
