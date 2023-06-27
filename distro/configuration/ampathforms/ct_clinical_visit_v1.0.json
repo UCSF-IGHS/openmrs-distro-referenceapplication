@@ -8882,7 +8882,7 @@
       "sections": [],
       "isSubform": "true",
       "subform": {
-        "name": "cd4_lab_results",
+        "name": "CD4 Lab Result",
         "package": "hiv",
         "behaviours": [
           {
@@ -8894,7 +8894,7 @@
       }
     },
     {
-      "label": "Lab results - Viral Load",
+      "label": "Viral Load Lab Result",
       "sections": [],
       "isSubform": "true",
       "subform": {
