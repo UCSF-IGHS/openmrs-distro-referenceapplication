@@ -283,8 +283,9 @@
                 {
                   "intent":"*",
                   "required":"true",
+                  "readonly": "mode == 'edit' && latest_hiv_test_result !== '138571AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_hiv_test_status == '8b8951a8-e8d6-40ca-ad70-89e8f8f71fa8' ? true : false",
                   "hide":{
-                    "hideWhenExpression":"latest_hiv_test_result == '138571AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    "hideWhenExpression":"latest_hiv_test_result == '138571AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_hiv_test_status == '8b8951a8-e8d6-40ca-ad70-89e8f8f71fa8'"
                   }
                 }
               ]
@@ -321,7 +322,7 @@
               "behaviours":[
                 {
                   "intent":"*",
-                  "required":"true",
+                  "required":"false",
                   "hide":{
                     "hideWhenExpression":"true"
                   }
@@ -756,7 +757,7 @@
                   "intent":"*",
                   "required":"true",
                   "hide":{
-                    "hideWhenExpression":"antenatal_visit_type == '160530AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_partner_hiv_test_status == '8b8951a8-e8d6-40ca-ad70-89e8f8f71fa8' || latest_partner_hiv_test_result == '138571AAAAAAA7AAAAAAAAAAAAAAAAAAAAAAA'"
+                    "hideWhenExpression":"antenatal_visit_type == '160530AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && latest_partner_hiv_test_status == '8b8951a8-e8d6-40ca-ad70-89e8f8f71fa8' || latest_partner_hiv_test_result == '138571AAAAAAA7AAAAAAAAAAAAAAAAAAAAAAA'"
                   }
                 }
               ]
@@ -968,9 +969,9 @@
               "behaviours":[
                 {
                   "intent":"*",
-                  "required":"true",
+                  "required":"false",
                   "hide":{
-                    "hideWhenExpression":"partner_hiv_test_done !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    "hideWhenExpression":"true"
                   }
                 }
               ]
@@ -1022,7 +1023,7 @@
                 "concept": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "date",
                 "calculate": {
-                  "calculateExpression": "addDaysToDate(useFieldValue('visit_date'), 30)"
+                  "calculateExpression": "visit_date !== '' ? addDaysToDate(useFieldValue('visit_date'), 30) : ''"
                 }
               },
               "behaviours":[
@@ -1088,7 +1089,7 @@
               "id": "transfer-out-to",
               "questionOptions": {
                 "concept": "159495AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "encounter-location",
+                "rendering": "text",
                 "locationTag": "8d4626ca-7abd-42ad-be48-56767bbcf272"
               },
               "behaviours":[
