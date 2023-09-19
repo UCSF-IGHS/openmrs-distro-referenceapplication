@@ -1,0 +1,2 @@
+Uuid,Void/Retire,Name,Description,Required,Format,Format description,Validator,Location behavior,Uniqueness behavior
+4da0a3fe-e546-463f-81fa-084f098ff06c,,PTracker ID,"PTracker ID",TRUE,"^[0-9]{5}[A-S]{1}[0-9]{6,8}$",,,,,
