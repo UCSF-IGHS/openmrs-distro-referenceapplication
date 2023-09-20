@@ -737,7 +737,7 @@
               "questionOptions": {
                 "concept": "164402AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "number",
-                "max": "999999999999",
+                "max": "99999999999999",
                 "min": "100000000000",
                 "calculate": {
                   "calculateExpression": "art_initiation == '160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? myValue = latest_anc_art_number : ''"

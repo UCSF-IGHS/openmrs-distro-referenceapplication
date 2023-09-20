@@ -617,7 +617,7 @@
               "questionOptions": {
                 "concept": "164402AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "number",
-                "max": "999999999999",
+                "max": "99999999999999",
                 "min": "100000000000"
               },
               "behaviours":[

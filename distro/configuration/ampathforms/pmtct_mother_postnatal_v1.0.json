@@ -468,7 +468,9 @@
               "id":"art_number",
               "questionOptions":{
                 "concept":"164402AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering":"number"
+                "rendering":"number",
+                "max": "99999999999999",
+                "min": "100000000000"
               },
               "behaviours":[
                 {
