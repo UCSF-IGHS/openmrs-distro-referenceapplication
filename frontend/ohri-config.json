@@ -147,6 +147,11 @@
   "@openmrs/esm-login-app": {
     "logo": {
       "src": "namibia_ohri_logo_lightbg.png"
+    },
+    "Translation overrides": {
+      "en": {
+        "poweredBy": "PTracker Version 1.5 Powered by"
+      }
     }
   },
   "@ohri/openmrs-esm-ohri-pmtct": {
