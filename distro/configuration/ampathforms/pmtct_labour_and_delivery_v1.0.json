@@ -1380,6 +1380,11 @@
                         "hideWhenExpression":"infantStatus === '125872AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                       },
                       "validators": [
+                         {
+                          "type":"js_expression",
+                          "failsWhenExpression":"myValue == useFieldValue('MotherPtracker_id')",
+                          "message": "This is a child and the PTracker id is similar to the mother please add the last digit"
+                        },
                         {
                           "type": "js_expression",
                           "failsWhenExpression": "!/^[0-9]{5}[A-Z]{1}[0-9]{7,8}$$/.test(myValue)",
