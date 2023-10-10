@@ -1369,7 +1369,7 @@
                     "concept": "164803AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "rendering": "text",
                     "calculate": {
-                      "calculateExpression": "!isEmpty('MotherPtracker_id') ? generateInfantPTrackerId(node.value.id, 'MotherPtracker_id') : ''"
+                      "calculateExpression": "!isEmpty('MotherPtracker_id') ? customGenerateInfantPTrackerId(node.value.id, 'MotherPtracker_id') : ''"
                     }
                   },
                   "behaviours":[
