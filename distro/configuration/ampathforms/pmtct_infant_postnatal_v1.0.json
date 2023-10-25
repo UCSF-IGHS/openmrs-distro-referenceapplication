@@ -654,7 +654,7 @@
                     "concept": "160563AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Confirmed HIV Positive",
                     "hide": {
-                      "hideWhenExpression": "final_test_result == '159971AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || rapid_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || dnapcr_test_result == '159971AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                      "hideWhenExpression": "final_test_result == '159971AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || final_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || rapid_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || rapid_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || dnapcr_test_result == '159971AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || dnapcr_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                     }
                   },
                   {
