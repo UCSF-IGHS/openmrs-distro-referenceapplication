@@ -716,7 +716,7 @@
                   "intent":"*",
                   "required":"true",
                   "hide":{
-                    "hideWhenExpression":"art_initiation == '160018AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || art_initiation == '1754AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || art_initiation == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || latest_hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'|| latest_hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' ||  hiv_test == 'd18fa331-f158-47d0-b344-cf147c7125a4' || hiv_test == '54b96458-6585-4c4c-a5b1-b3ca7f1be351'"
+                    "hideWhenExpression":"art_initiation == '160018AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || art_initiation == '1754AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || art_initiation == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || latest_hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'|| latest_hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' ||  hiv_test == 'd18fa331-f158-47d0-b344-cf147c7125a4' || hiv_test == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test == '6f041992-f0fd-4ec7-b7b6-c06b0f60bf3f'"
                   }
                 }
               ]

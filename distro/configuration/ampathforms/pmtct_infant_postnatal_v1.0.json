@@ -627,15 +627,24 @@
                   },
                   {
                     "concept": "5240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Lost to Follow Up"
+                    "label": "Lost to Follow Up",
+                    "hide": {
+                      "hideWhenExpression": "rapid_test_result == '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || final_test_result == '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    }
                   },
                   {
                     "concept": "160432AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Dead"
+                    "label": "Dead",
+                    "hide": {
+                      "hideWhenExpression": "rapid_test_result == '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || final_test_result == '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    }
                   },
                   {
                     "concept": "164861AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Confirmed HIV negative infant (discharged from PMTCT)"
+                    "label": "Confirmed HIV negative infant (discharged from PMTCT)",
+                    "hide": {
+                      "hideWhenExpression": "rapid_test_result == '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || final_test_result == '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || final_test_result == '159971AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || rapid_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || dnapcr_test_result == '159971AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    }
                   },
                   {
                     "concept": "159492AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -643,7 +652,10 @@
                   },
                   {
                     "concept": "160563AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Confirmed HIV Positive"
+                    "label": "Confirmed HIV Positive",
+                    "hide": {
+                      "hideWhenExpression": "final_test_result == '159971AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || rapid_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || dnapcr_test_result == '159971AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    }
                   },
                   {
                     "concept": "54b96458-6585-4c4c-a5b1-b3ca7f1be351",
