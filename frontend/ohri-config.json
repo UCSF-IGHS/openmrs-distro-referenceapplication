@@ -3,7 +3,6 @@
     "extensionSlots": {
       "patient-chart-dashboard-slot": {
         "remove": [
-          "charts-summary-dashboard",
           "immunization-summary-dashboard",
           "medications-summary-dashboard",
           "encounters-summary-dashboard",
