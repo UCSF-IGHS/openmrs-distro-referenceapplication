@@ -15,6 +15,7 @@
     "@openmrs/esm-patient-list-app": "next",
     "@openmrs/esm-patient-registration-app": "next",
     "@openmrs/esm-form-builder-app": "next",
+    "@openmrs/esm-active-visits-app": "next",
     "@ohri/openmrs-esm-ohri-core-app": "next",
     "@ohri/openmrs-esm-ohri-form-render-app": "next",
     "@ohri/openmrs-esm-ohri-pmtct": "next",
