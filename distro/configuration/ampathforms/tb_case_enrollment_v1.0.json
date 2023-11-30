@@ -13,7 +13,7 @@
             {
               "label": "TB Program to enrol",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "tbProgramType",
               "questionOptions": {
                 "rendering": "radio",
@@ -369,10 +369,6 @@
               },
               "behaviours": [
                 {
-                  "intent": "*",
-                  "required": "true",
-                  "unspecified": "true",
-                  "hide": {},
                   "validators": [
                     {
                       "type": "date",
@@ -899,9 +895,9 @@
     }
   ],
   "processor": "EncounterFormProcessor",
-  "encounterType": "TB Program Enrolment",
+  "encounterType": "9a199b59-b185-485b-b9b3-a9754e65ae57",
   "referencedForms": [],
-  "uuid": "9a199b59-b185-485b-b9b3-a9754e65ae57",
+  "uuid": "9ad909d2-64a9-437d-9a40-301d50cae1f6",
   "description": "This form enrols a client to the respective TB Program",
   "version": "1.0"
 }
