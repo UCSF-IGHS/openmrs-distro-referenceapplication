@@ -20,21 +20,21 @@
                 "concept": "159599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "date"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"false"
+                  "intent": "*",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "false"
                   },
                   "validators": [
                     {
-                      "type":"date",
-                      "allowFutureDates":"false"
+                      "type": "date",
+                      "allowFutureDates": "false"
                     },
                     {
-                      "type":"js_expression",
-                      "failsWhenExpression":"isDateBefore(myValue, '1980-01-01') || myValue >= today()",
+                      "type": "js_expression",
+                      "failsWhenExpression": "isDateBefore(myValue, '1980-01-01') || myValue >= today()",
                       "message": "Next visit date cannot be less than current visit date"
                     }
                   ]
@@ -49,12 +49,12 @@
                 "concept": "6c45421e-2566-47cb-bbb3-07586fffbfe2",
                 "rendering": "text"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"true"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "true"
                   }
                 }
               ]
@@ -81,20 +81,17 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"false"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "false"
                   },
-                  "validators":[
-
-                  ]
+                  "validators": []
                 }
               ]
             },
-
             {
               "label": "Infant Prophylaxis Status",
               "type": "obs",
@@ -121,16 +118,14 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"infant_hiv_exposure_status !== '54431b42-dae4-4d19-9034-44ba7489a334'"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "infant_hiv_exposure_status !== '54431b42-dae4-4d19-9034-44ba7489a334'"
                   },
-                  "validators":[
-
-                  ]
+                  "validators": []
                 }
               ]
             },
@@ -164,16 +159,14 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"infant_hiv_exposure_status !== '54431b42-dae4-4d19-9034-44ba7489a334' || infant_prophylaxis_status !== '857c5868-bdcd-4f5c-aadd-8b0fa7de8481'"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "infant_hiv_exposure_status !== '54431b42-dae4-4d19-9034-44ba7489a334' || infant_prophylaxis_status !== '857c5868-bdcd-4f5c-aadd-8b0fa7de8481'"
                   },
-                  "validators":[
-
-                  ]
+                  "validators": []
                 }
               ]
             },
@@ -203,16 +196,14 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"infant_hiv_exposure_status !== '54431b42-dae4-4d19-9034-44ba7489a334'"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "infant_hiv_exposure_status !== '54431b42-dae4-4d19-9034-44ba7489a334'"
                   },
-                  "validators":[
-
-                  ]
+                  "validators": []
                 }
               ]
             },
@@ -246,16 +237,14 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"infant_ctx_status !== 'f3a26c7d-a612-4b71-bd30-a359cae817bc'"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "infant_ctx_status !== 'f3a26c7d-a612-4b71-bd30-a359cae817bc'"
                   },
-                  "validators":[
-
-                  ]
+                  "validators": []
                 }
               ]
             },
@@ -281,16 +270,14 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"false"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "false"
                   },
-                  "validators":[
-
-                  ]
+                  "validators": []
                 }
               ]
             },
@@ -316,16 +303,14 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"infant_hiv_test !== '6f041992-f0fd-4ec7-b7b6-c06b0f60bf3f'"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "infant_hiv_test !== '6f041992-f0fd-4ec7-b7b6-c06b0f60bf3f'"
                   },
-                  "validators":[
-
-                  ]
+                  "validators": []
                 }
               ]
             },
@@ -355,16 +340,14 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"infant_test_type !== '844AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "infant_test_type !== '844AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
-                  "validators":[
-
-                  ]
+                  "validators": []
                 }
               ]
             },
@@ -390,16 +373,14 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"infant_test_type !== '1042AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "infant_test_type !== '1042AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
-                  "validators":[
-
-                  ]
+                  "validators": []
                 }
               ]
             },
@@ -425,16 +406,14 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"rapid_test_result !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && dnapcr_test_result !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "rapid_test_result !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && dnapcr_test_result !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
-                  "validators":[
-
-                  ]
+                  "validators": []
                 }
               ]
             },
@@ -464,16 +443,14 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"confirmatory_test_done !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "confirmatory_test_done !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
-                  "validators":[
-
-                  ]
+                  "validators": []
                 }
               ]
             },
@@ -499,17 +476,15 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"confirmatory_test_done !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || rapid_test_result !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && dnapcr_test_result !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "confirmatory_test_done !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || rapid_test_result !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && dnapcr_test_result !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
-                  "validators":[
-
-                  ]
+                  "validators": []
                 }
               ]
             },
@@ -535,16 +510,14 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"final_test_result !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || rapid_test_result !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && dnapcr_test_result !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "final_test_result !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || rapid_test_result !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && dnapcr_test_result !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
-                  "validators":[
-
-                  ]
+                  "validators": []
                 }
               ]
             },
@@ -578,16 +551,14 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"false"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "false"
                   },
-                  "validators":[
-
-                  ]
+                  "validators": []
                 }
               ]
             },
@@ -599,17 +570,15 @@
                 "concept": "163719AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "textarea"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"breastfeeding !== '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "breastfeeding !== '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
-                  "validators":[
-
-                  ]
+                  "validators": []
                 }
               ]
             },
@@ -663,16 +632,14 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"infant_hiv_exposure_status !== '54431b42-dae4-4d19-9034-44ba7489a334'"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "infant_hiv_exposure_status !== '54431b42-dae4-4d19-9034-44ba7489a334'"
                   },
-                  "validators":[
-
-                  ]
+                  "validators": []
                 }
               ]
             },
@@ -682,20 +649,23 @@
               "id": "transfer_in_from",
               "questionOptions": {
                 "concept": "160535AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "encounter-location",
-                "locationTag": "8d4626ca-7abd-42ad-be48-56767bbcf272"
+                "rendering": "ui-select-extended",
+                "datasource": {
+                  "name": "location_datasource",
+                  "config": {
+                    "tag": "8d4626ca-7abd-42ad-be48-56767bbcf272"
+                  }
+                }
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"infant_transfer_status !== '160563AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "infant_transfer_status !== '160563AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
-                  "validators":[
-
-                  ]
+                  "validators": []
                 }
               ]
             },
@@ -707,22 +677,22 @@
                 "concept": "160534AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "date"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"infant_transfer_status !== '160563AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "infant_transfer_status !== '160563AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
-                  "validators":[
+                  "validators": [
                     {
-                      "type":"date",
-                      "allowFutureDates":"false"
+                      "type": "date",
+                      "allowFutureDates": "false"
                     },
                     {
-                      "type":"js_expression",
-                      "failsWhenExpression":"isDateBefore(myValue, '1980-01-01') || myValue >= today()"
+                      "type": "js_expression",
+                      "failsWhenExpression": "isDateBefore(myValue, '1980-01-01') || myValue >= today()"
                     }
                   ]
                 }
@@ -737,17 +707,15 @@
                 "rendering": "encounter-location",
                 "locationTag": "8d4626ca-7abd-42ad-be48-56767bbcf272"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"infant_transfer_status !== '159492AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "infant_transfer_status !== '159492AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
-                  "validators":[
-
-                  ]
+                  "validators": []
                 }
               ]
             },
@@ -759,22 +727,22 @@
                 "concept": "160649AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "date"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"infant_transfer_status !== '159492AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "infant_transfer_status !== '159492AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
-                  "validators":[
+                  "validators": [
                     {
-                      "type":"date",
-                      "allowFutureDates":"false"
+                      "type": "date",
+                      "allowFutureDates": "false"
                     },
                     {
-                      "type":"js_expression",
-                      "failsWhenExpression":"false"
+                      "type": "js_expression",
+                      "failsWhenExpression": "false"
                     }
                   ]
                 }
@@ -788,22 +756,22 @@
                 "concept": "160753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "date"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"infant_transfer_status !== '5240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "infant_transfer_status !== '5240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
-                  "validators":[
+                  "validators": [
                     {
-                      "type":"date",
-                      "allowFutureDates":"false"
+                      "type": "date",
+                      "allowFutureDates": "false"
                     },
                     {
-                      "type":"js_expression",
-                      "failsWhenExpression":"false"
+                      "type": "js_expression",
+                      "failsWhenExpression": "false"
                     }
                   ]
                 }
@@ -817,23 +785,23 @@
                 "concept": "160753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "date"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"infant_transfer_status !== '164861AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "infant_transfer_status !== '164861AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
-                  "validators":[
+                  "validators": [
                     {
-                      "type":"date",
-                      "allowFutureDates":"false"
+                      "type": "date",
+                      "allowFutureDates": "false"
                     },
                     {
-                      "type":"js_expression",
-                      "failsWhenExpression":"isDateBefore(myValue, patient.birthDate)",
-                      "message":"Infant outcome date can not be earlier then date of birth"
+                      "type": "js_expression",
+                      "failsWhenExpression": "isDateBefore(myValue, patient.birthDate)",
+                      "message": "Infant outcome date can not be earlier then date of birth"
                     }
                   ]
                 }
@@ -847,22 +815,22 @@
                 "concept": "1543AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "date"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"infant_transfer_status !== '160432AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "infant_transfer_status !== '160432AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
-                  "validators":[
+                  "validators": [
                     {
-                      "type":"date",
-                      "allowFutureDates":"false"
+                      "type": "date",
+                      "allowFutureDates": "false"
                     },
                     {
-                      "type":"js_expression",
-                      "failsWhenExpression":"false"
+                      "type": "js_expression",
+                      "failsWhenExpression": "false"
                     }
                   ]
                 }
@@ -879,15 +847,15 @@
                   "calculateExpression": "visit_date !== '' ? addDaysToDate(useFieldValue('visit_date'), 30) : ''"
                 }
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"infant_transfer_status !== '161636AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "infant_transfer_status !== '161636AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
-                  "validators":[
+                  "validators": [
                     {
                       "type": "js_expression",
                       "failsWhenExpression": "myValue <= useFieldValue('visit_date')"

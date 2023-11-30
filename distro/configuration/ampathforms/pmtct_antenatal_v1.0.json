@@ -20,21 +20,21 @@
                 "concept": "163260AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "date"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"false"
+                  "intent": "*",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "false"
                   },
                   "validators": [
                     {
-                      "type":"date",
-                      "allowFutureDates":"false"
+                      "type": "date",
+                      "allowFutureDates": "false"
                     },
                     {
-                      "type":"js_expression",
-                      "failsWhenExpression":"isDateBefore(myValue, '1980-01-01') || myValue >= today()"
+                      "type": "js_expression",
+                      "failsWhenExpression": "isDateBefore(myValue, '1980-01-01') || myValue >= today()"
                     }
                   ]
                 }
@@ -62,12 +62,12 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"false"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "false"
                   }
                 }
               ]
@@ -91,21 +91,20 @@
                 }
               },
               "readonlyExpression": "antenatal_visit_type == '160530AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"false",
-                  "hide":{
-                    "hideWhenExpression":"false"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "false",
+                  "hide": {
+                    "hideWhenExpression": "false"
                   },
-                  "validators":[
+                  "validators": [
                     {
                       "type": "js_expression",
                       "failsWhenExpression": "!/^[0-9]{5}[A-S]{1}[0-9]{6,8}$$/.test(myValue)",
                       "message": "Invalid Ptracker number"
                     }
-
                   ]
                 }
               ]
@@ -121,8 +120,8 @@
                   "calculateExpression": "resolve(api.getLatestObs(patient.id, '6c45421e-2566-47cb-bbb3-07586fffbfe2', '2549af50-75c8-4aeb-87ca-4bb2cef6c69a')).valueString"
                 }
               },
-              "hide":{
-                "hideWhenExpression":"true"
+              "hide": {
+                "hideWhenExpression": "true"
               }
             }
           ]
@@ -140,13 +139,13 @@
                 "usePreviousValueDisabled": "true",
                 "rendering": "number"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"antenatal_visit_type !== '164180AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "antenatal_visit_type !== '164180AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   }
                 }
               ]
@@ -160,13 +159,13 @@
                 "usePreviousValueDisabled": "true",
                 "rendering": "number"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"antenatal_visit_type !== '164180AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "antenatal_visit_type !== '164180AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   }
                 }
               ]
@@ -180,22 +179,22 @@
                 "usePreviousValueDisabled": "true",
                 "rendering": "date"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"antenatal_visit_type !== '164180AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "antenatal_visit_type !== '164180AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
                   "validators": [
                     {
-                      "type":"date",
-                      "allowFutureDates":"false"
+                      "type": "date",
+                      "allowFutureDates": "false"
                     },
                     {
-                      "type":"js_expression",
-                      "failsWhenExpression":"isDateBefore(myValue, '1900-01-01') || myValue >= today() || myValue > useFieldValue('visit_date')"
+                      "type": "js_expression",
+                      "failsWhenExpression": "isDateBefore(myValue, '1900-01-01') || myValue >= today() || myValue > useFieldValue('visit_date')"
                     }
                   ]
                 }
@@ -212,13 +211,13 @@
                   "calculateExpression": "calcEDD('lmp')"
                 }
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"antenatal_visit_type !== '164180AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || isEmpty('lmp')"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "antenatal_visit_type !== '164180AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || isEmpty('lmp')"
                   },
                   "validators": [
                     {
@@ -234,11 +233,11 @@
               ]
             }
           ],
-          "behaviours":[
+          "behaviours": [
             {
-              "intent":"*",
-              "hide":{
-                "hideWhenExpression":"antenatal_visit_type !== '164180AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              "intent": "*",
+              "hide": {
+                "hideWhenExpression": "antenatal_visit_type !== '164180AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             }
           ]
@@ -252,7 +251,6 @@
           "label": "HIV Testing and ART Initiation",
           "isExpanded": "true",
           "questions": [
-
             {
               "label": "HIV test status ",
               "type": "obs",
@@ -279,13 +277,13 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
+                  "intent": "*",
+                  "required": "true",
                   "readonly": "mode === 'edit' && isEmpty(myValue) && isEmpty(latest_hiv_test_status)",
-                  "hide":{
-                    "hideWhenExpression":"latest_hiv_test_result == '138571AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_hiv_test_status == '8b8951a8-e8d6-40ca-ad70-89e8f8f71fa8' || latest_art_initiation == '160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_art_initiation == '160120AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "hide": {
+                    "hideWhenExpression": "latest_hiv_test_result == '138571AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_hiv_test_status == '8b8951a8-e8d6-40ca-ad70-89e8f8f71fa8' || latest_art_initiation == '160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_art_initiation == '160120AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   }
                 }
               ]
@@ -319,12 +317,12 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"false",
-                  "hide":{
-                    "hideWhenExpression":"true"
+                  "intent": "*",
+                  "required": "false",
+                  "hide": {
+                    "hideWhenExpression": "true"
                   }
                 }
               ]
@@ -355,12 +353,12 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"isEmpty(hiv_test) || hiv_test !== '6f041992-f0fd-4ec7-b7b6-c06b0f60bf3f'"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "isEmpty(hiv_test) || hiv_test !== '6f041992-f0fd-4ec7-b7b6-c06b0f60bf3f'"
                   }
                 }
               ]
@@ -372,8 +370,8 @@
               "questionOptions": {
                 "concept": "159427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "fixed-field",
-                "calculate":{
-                  "calculateExpression":"resolve(api.getLatestObs(patient.id, '159427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '2549af50-75c8-4aeb-87ca-4bb2cef6c69a'))?.valueCodeableConcept?.coding[0]?.code"
+                "calculate": {
+                  "calculateExpression": "resolve(api.getLatestObs(patient.id, '159427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '2549af50-75c8-4aeb-87ca-4bb2cef6c69a'))?.valueCodeableConcept?.coding[0]?.code"
                 },
                 "answers": [
                   {
@@ -394,12 +392,12 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"true"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "true"
                   }
                 }
               ]
@@ -415,68 +413,68 @@
                   {
                     "concept": "160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Already on ART before current pregnancy",
-                    "conceptMappings":[
+                    "conceptMappings": [
                       {
-                        "type":"PIH",
-                        "value":"1257"
+                        "type": "PIH",
+                        "value": "1257"
                       },
                       {
-                        "type":"PIH Malawi",
-                        "value":"7010"
+                        "type": "PIH Malawi",
+                        "value": "7010"
                       },
                       {
-                        "type":"CIEL",
-                        "value":"160119"
+                        "type": "CIEL",
+                        "value": "160119"
                       }
                     ]
                   },
                   {
                     "concept": "160120AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Started on ART in ANC current pregnancy",
-                    "conceptMappings":[
+                    "conceptMappings": [
                       {
-                        "type":"CIEL",
-                        "value":"160120"
+                        "type": "CIEL",
+                        "value": "160120"
                       },
                       {
-                        "type":"PIH",
-                        "value":"1256"
+                        "type": "PIH",
+                        "value": "1256"
                       }
                     ]
                   },
                   {
                     "concept": "160018AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Refused ART",
-                    "conceptMappings":[
+                    "conceptMappings": [
                       {
-                        "type":"CIEL",
-                        "value":"160018"
+                        "type": "CIEL",
+                        "value": "160018"
                       }
                     ]
                   },
                   {
                     "concept": "1754AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Not started due to stockout of ART",
-                    "conceptMappings":[
+                    "conceptMappings": [
                       {
-                        "type":"CIEL",
-                        "value":"1754"
+                        "type": "CIEL",
+                        "value": "1754"
                       },
                       {
-                        "type":"AMPATH",
-                        "value":"664"
+                        "type": "AMPATH",
+                        "value": "664"
                       },
                       {
-                        "type":"SNOMED CT",
-                        "value":"182856006"
+                        "type": "SNOMED CT",
+                        "value": "182856006"
                       },
                       {
-                        "type":"SNOMED MVP",
-                        "value":"17541000105004"
+                        "type": "SNOMED MVP",
+                        "value": "17541000105004"
                       },
                       {
-                        "type":"PIH",
-                        "value":"1761"
+                        "type": "PIH",
+                        "value": "1761"
                       }
                     ]
                   },
@@ -486,12 +484,12 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"latest_hiv_test_result == '138571AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_hiv_test_status == '8b8951a8-e8d6-40ca-ad70-89e8f8f71fa8' ? latest_art_initiation == '160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_art_initiation == '160120AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' : isEmpty(hiv_test) || hiv_test !== '8b8951a8-e8d6-40ca-ad70-89e8f8f71fa8' && hiv_test_result !== '138571AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "latest_hiv_test_result == '138571AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_hiv_test_status == '8b8951a8-e8d6-40ca-ad70-89e8f8f71fa8' ? latest_art_initiation == '160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_art_initiation == '160120AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' : isEmpty(hiv_test) || hiv_test !== '8b8951a8-e8d6-40ca-ad70-89e8f8f71fa8' && hiv_test_result !== '138571AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   }
                 }
               ]
@@ -510,68 +508,68 @@
                   {
                     "concept": "160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Already on ART before current pregnancy",
-                    "conceptMappings":[
+                    "conceptMappings": [
                       {
-                        "type":"PIH",
-                        "value":"1257"
+                        "type": "PIH",
+                        "value": "1257"
                       },
                       {
-                        "type":"PIH Malawi",
-                        "value":"7010"
+                        "type": "PIH Malawi",
+                        "value": "7010"
                       },
                       {
-                        "type":"CIEL",
-                        "value":"160119"
+                        "type": "CIEL",
+                        "value": "160119"
                       }
                     ]
                   },
                   {
                     "concept": "160120AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Started on ART in ANC current pregnancy",
-                    "conceptMappings":[
+                    "conceptMappings": [
                       {
-                        "type":"CIEL",
-                        "value":"160120"
+                        "type": "CIEL",
+                        "value": "160120"
                       },
                       {
-                        "type":"PIH",
-                        "value":"1256"
+                        "type": "PIH",
+                        "value": "1256"
                       }
                     ]
                   },
                   {
                     "concept": "160018AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Refused ART",
-                    "conceptMappings":[
+                    "conceptMappings": [
                       {
-                        "type":"CIEL",
-                        "value":"160018"
+                        "type": "CIEL",
+                        "value": "160018"
                       }
                     ]
                   },
                   {
                     "concept": "1754AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Not started due to stockout of ART",
-                    "conceptMappings":[
+                    "conceptMappings": [
                       {
-                        "type":"CIEL",
-                        "value":"1754"
+                        "type": "CIEL",
+                        "value": "1754"
                       },
                       {
-                        "type":"AMPATH",
-                        "value":"664"
+                        "type": "AMPATH",
+                        "value": "664"
                       },
                       {
-                        "type":"SNOMED CT",
-                        "value":"182856006"
+                        "type": "SNOMED CT",
+                        "value": "182856006"
                       },
                       {
-                        "type":"SNOMED MVP",
-                        "value":"17541000105004"
+                        "type": "SNOMED MVP",
+                        "value": "17541000105004"
                       },
                       {
-                        "type":"PIH",
-                        "value":"1761"
+                        "type": "PIH",
+                        "value": "1761"
                       }
                     ]
                   },
@@ -581,12 +579,12 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"true"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "true"
                   }
                 }
               ]
@@ -599,13 +597,13 @@
                 "concept": "163322AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "textarea"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"isEmpty(art_initiation) || art_initiation !== '160018AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ||  hiv_test == 'd18fa331-f158-47d0-b344-cf147c7125a4' || hiv_test == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351'"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "isEmpty(art_initiation) || art_initiation !== '160018AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ||  hiv_test == 'd18fa331-f158-47d0-b344-cf147c7125a4' || hiv_test == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351'"
                   }
                 }
               ]
@@ -620,12 +618,12 @@
                 "max": "99999999999999",
                 "min": "100000000000"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"!isEmpty(latest_art_number) ? true : isEmpty(latest_art_number) && latest_art_initiation == '160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_art_initiation == '160120AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? false : isEmpty(art_initiation) || art_initiation == '160018AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || art_initiation == '1754AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || art_initiation =='54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test == 'd18fa331-f158-47d0-b344-cf147c7125a4' || hiv_test == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351'"
+                  "intent": "*",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "!isEmpty(latest_art_number) ? true : isEmpty(latest_art_number) && latest_art_initiation == '160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_art_initiation == '160120AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? false : isEmpty(art_initiation) || art_initiation == '160018AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || art_initiation == '1754AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || art_initiation =='54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test == 'd18fa331-f158-47d0-b344-cf147c7125a4' || hiv_test == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351'"
                   }
                 }
               ]
@@ -638,22 +636,22 @@
                 "concept": "159599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "date"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"!isEmpty(latest_art_start_date) ? true : isEmpty(latest_art_number) && latest_art_initiation == '160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_art_initiation == '160120AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? false : isEmpty(art_initiation) || art_initiation == '160018AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || art_initiation == '1754AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || art_initiation =='54b96458-6585-4c4c-a5b1-b3ca7f1be351' ||  hiv_test == 'd18fa331-f158-47d0-b344-cf147c7125a4' || hiv_test == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351'"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "!isEmpty(latest_art_start_date) ? true : isEmpty(latest_art_number) && latest_art_initiation == '160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_art_initiation == '160120AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? false : isEmpty(art_initiation) || art_initiation == '160018AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || art_initiation == '1754AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || art_initiation =='54b96458-6585-4c4c-a5b1-b3ca7f1be351' ||  hiv_test == 'd18fa331-f158-47d0-b344-cf147c7125a4' || hiv_test == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351'"
                   },
                   "validators": [
                     {
-                      "type":"date",
-                      "allowFutureDates":"false"
+                      "type": "date",
+                      "allowFutureDates": "false"
                     },
                     {
-                      "type":"js_expression",
-                      "failsWhenExpression":"isDateBefore(myValue, '1980-01-01') || myValue >= today()"
+                      "type": "js_expression",
+                      "failsWhenExpression": "isDateBefore(myValue, '1980-01-01') || myValue >= today()"
                     }
                   ]
                 }
@@ -670,8 +668,8 @@
                   "calculateExpression": "resolve(api.getLatestObs(patient.id, '164402AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'))?.valueQuantity?.value"
                 }
               },
-              "hide":{
-                "hideWhenExpression":"true"
+              "hide": {
+                "hideWhenExpression": "true"
               }
             },
             {
@@ -685,8 +683,8 @@
                   "calculateExpression": "resolve(api.getLatestObs(patient.id, '159599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'))?.valueDateTime"
                 }
               },
-              "hide":{
-                "hideWhenExpression":"true"
+              "hide": {
+                "hideWhenExpression": "true"
               }
             },
             {
@@ -711,12 +709,12 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"art_initiation == '160018AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || art_initiation == '1754AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || art_initiation == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || latest_hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'|| latest_hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' ||  hiv_test == 'd18fa331-f158-47d0-b344-cf147c7125a4' || hiv_test == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test == '6f041992-f0fd-4ec7-b7b6-c06b0f60bf3f'"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "art_initiation == '160018AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || art_initiation == '1754AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || art_initiation == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || latest_hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'|| latest_hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' ||  hiv_test == 'd18fa331-f158-47d0-b344-cf147c7125a4' || hiv_test == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test == '6f041992-f0fd-4ec7-b7b6-c06b0f60bf3f'"
                   }
                 }
               ]
@@ -729,22 +727,22 @@
                 "concept": "163281AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "date"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"recent_viral_load !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ||  hiv_test == 'd18fa331-f158-47d0-b344-cf147c7125a4' || hiv_test == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351'" 
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "recent_viral_load !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ||  hiv_test == 'd18fa331-f158-47d0-b344-cf147c7125a4' || hiv_test == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351'"
                   },
                   "validators": [
                     {
-                      "type":"date",
-                      "allowFutureDates":"false"
+                      "type": "date",
+                      "allowFutureDates": "false"
                     },
                     {
-                      "type":"js_expression",
-                      "failsWhenExpression":"isDateBefore(myValue, '1980-01-01') || myValue >= today()"
+                      "type": "js_expression",
+                      "failsWhenExpression": "isDateBefore(myValue, '1980-01-01') || myValue >= today()"
                     }
                   ]
                 }
@@ -780,12 +778,12 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"recent_viral_load !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ||  hiv_test == 'd18fa331-f158-47d0-b344-cf147c7125a4' || hiv_test == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351'"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "recent_viral_load !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ||  hiv_test == 'd18fa331-f158-47d0-b344-cf147c7125a4' || hiv_test == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351'"
                   }
                 }
               ]
@@ -798,13 +796,13 @@
                 "concept": "856AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "number"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"viral_load_results !== '1301AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ||  hiv_test == 'd18fa331-f158-47d0-b344-cf147c7125a4' || hiv_test == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351'"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "viral_load_results !== '1301AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ||  hiv_test == 'd18fa331-f158-47d0-b344-cf147c7125a4' || hiv_test == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351'"
                   }
                 }
               ]
@@ -835,12 +833,12 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"antenatal_visit_type == '160530AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && latest_partner_hiv_test_status == '8b8951a8-e8d6-40ca-ad70-89e8f8f71fa8' || latest_partner_hiv_test_result == '138571AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "antenatal_visit_type == '160530AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && latest_partner_hiv_test_status == '8b8951a8-e8d6-40ca-ad70-89e8f8f71fa8' || latest_partner_hiv_test_result == '138571AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   }
                 }
               ]
@@ -874,12 +872,12 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"true"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "true"
                   }
                 }
               ]
@@ -895,62 +893,62 @@
                   {
                     "concept": "138571AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Positive",
-                    "conceptMappings":[
+                    "conceptMappings": [
                       {
-                        "type":"CIEL",
-                        "value":"138571"
+                        "type": "CIEL",
+                        "value": "138571"
                       },
                       {
-                        "type":"AMPATH",
-                        "value":"1169"
+                        "type": "AMPATH",
+                        "value": "1169"
                       },
                       {
-                        "type":"SNOMED CT",
-                        "value":"165816005"
+                        "type": "SNOMED CT",
+                        "value": "165816005"
                       }
                     ]
                   },
                   {
                     "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Negative",
-                    "conceptMappings":[
+                    "conceptMappings": [
                       {
-                        "type":"CIEL",
-                        "value":"664"
+                        "type": "CIEL",
+                        "value": "664"
                       },
                       {
-                        "type":"AMPATH",
-                        "value":"664"
+                        "type": "AMPATH",
+                        "value": "664"
                       },
                       {
-                        "type":"SNOMED CT",
-                        "value":"260385009"
+                        "type": "SNOMED CT",
+                        "value": "260385009"
                       },
                       {
-                        "type":"PIH",
-                        "value":"664"
+                        "type": "PIH",
+                        "value": "664"
                       }
                     ]
                   },
                   {
                     "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Unknown",
-                    "conceptMappings":[
+                    "conceptMappings": [
                       {
-                        "type":"CIEL",
-                        "value":"1067"
+                        "type": "CIEL",
+                        "value": "1067"
                       },
                       {
-                        "type":"AMPATH",
-                        "value":"1067"
+                        "type": "AMPATH",
+                        "value": "1067"
                       },
                       {
-                        "type":"SNOMED CT",
-                        "value":"261665006"
+                        "type": "SNOMED CT",
+                        "value": "261665006"
                       },
                       {
-                        "type":"PIH",
-                        "value":"1067"
+                        "type": "PIH",
+                        "value": "1067"
                       }
                     ]
                   },
@@ -960,12 +958,12 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"partner_hiv_test_done !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "partner_hiv_test_done !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   }
                 }
               ]
@@ -984,62 +982,62 @@
                   {
                     "concept": "138571AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Positive",
-                    "conceptMappings":[
+                    "conceptMappings": [
                       {
-                        "type":"CIEL",
-                        "value":"138571"
+                        "type": "CIEL",
+                        "value": "138571"
                       },
                       {
-                        "type":"AMPATH",
-                        "value":"1169"
+                        "type": "AMPATH",
+                        "value": "1169"
                       },
                       {
-                        "type":"SNOMED CT",
-                        "value":"165816005"
+                        "type": "SNOMED CT",
+                        "value": "165816005"
                       }
                     ]
                   },
                   {
                     "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Negative",
-                    "conceptMappings":[
+                    "conceptMappings": [
                       {
-                        "type":"CIEL",
-                        "value":"664"
+                        "type": "CIEL",
+                        "value": "664"
                       },
                       {
-                        "type":"AMPATH",
-                        "value":"664"
+                        "type": "AMPATH",
+                        "value": "664"
                       },
                       {
-                        "type":"SNOMED CT",
-                        "value":"260385009"
+                        "type": "SNOMED CT",
+                        "value": "260385009"
                       },
                       {
-                        "type":"PIH",
-                        "value":"664"
+                        "type": "PIH",
+                        "value": "664"
                       }
                     ]
                   },
                   {
                     "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Unknown",
-                    "conceptMappings":[
+                    "conceptMappings": [
                       {
-                        "type":"CIEL",
-                        "value":"1067"
+                        "type": "CIEL",
+                        "value": "1067"
                       },
                       {
-                        "type":"AMPATH",
-                        "value":"1067"
+                        "type": "AMPATH",
+                        "value": "1067"
                       },
                       {
-                        "type":"SNOMED CT",
-                        "value":"261665006"
+                        "type": "SNOMED CT",
+                        "value": "261665006"
                       },
                       {
-                        "type":"PIH",
-                        "value":"1067"
+                        "type": "PIH",
+                        "value": "1067"
                       }
                     ]
                   },
@@ -1049,12 +1047,12 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"false",
-                  "hide":{
-                    "hideWhenExpression":"true"
+                  "intent": "*",
+                  "required": "false",
+                  "hide": {
+                    "hideWhenExpression": "true"
                   }
                 }
               ]
@@ -1067,21 +1065,21 @@
                 "concept": "90bd8fec-3ff1-11e9-b210-d663bd873d93",
                 "rendering": "date"
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"partner_hiv_test_done !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "partner_hiv_test_done !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
                   "validators": [
                     {
-                      "type":"date",
-                      "allowFutureDates":"false"
+                      "type": "date",
+                      "allowFutureDates": "false"
                     },
                     {
-                      "type":"js_expression",
-                      "failsWhenExpression":"isDateBefore(myValue, '1980-01-01') || myValue >= today()"
+                      "type": "js_expression",
+                      "failsWhenExpression": "isDateBefore(myValue, '1980-01-01') || myValue >= today()"
                     }
                   ]
                 }
@@ -1109,22 +1107,22 @@
                   "calculateExpression": "visit_date !== '' ? addDaysToDate(useFieldValue('visit_date'), 30) : ''"
                 }
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"false"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "false"
                   },
                   "validators": [
                     {
-                      "type":"date",
-                      "allowFutureDates":"true"
+                      "type": "date",
+                      "allowFutureDates": "true"
                     },
                     {
-                      "type":"js_expression",
-                      "failsWhenExpression":"myValue < useFieldValue('visit_date')"
+                      "type": "js_expression",
+                      "failsWhenExpression": "myValue < useFieldValue('visit_date')"
                     }
                   ]
                 }
@@ -1156,12 +1154,12 @@
                   }
                 ]
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "hide":{
-                    "hideWhenExpression":"false"
+                  "intent": "*",
+                  "required": "true",
+                  "hide": {
+                    "hideWhenExpression": "false"
                   }
                 }
               ]
@@ -1172,16 +1170,21 @@
               "id": "transfer-out-to",
               "questionOptions": {
                 "concept": "159495AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "text",
-                "locationTag": "8d4626ca-7abd-42ad-be48-56767bbcf272"
+                "rendering": "ui-select-extended",
+                "datasource": {
+                  "name": "location_datasource",
+                  "config": {
+                    "tag": "8d4626ca-7abd-42ad-be48-56767bbcf272"
+                  }
+                }
               },
-              "behaviours":[
+              "behaviours": [
                 {
-                  "intent":"*",
-                  "required":"true",
-                  "unspecified":"true",
-                  "hide":{
-                    "hideWhenExpression":"transfer_out !== '160036AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "transfer_out !== '160036AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   }
                 }
               ]
@@ -1191,18 +1194,21 @@
       ]
     }
   ],
-  "availableIntents":[
+  "availableIntents": [
     {
-      "intent":"*",
-      "display":"Antenatal Form"
+      "intent": "*",
+      "display": "Antenatal Form"
     }
   ],
-  "processor":"EncounterFormProcessor",
-  "uuid":"12de5bc5-352e-4faf-9961-a2125085a75c",
-  "referencedForms":[],
-  "encounterType":"2549af50-75c8-4aeb-87ca-4bb2cef6c69a",
-  "postSubmissionActions": ["PTrackerSubmissionAction", "ArtSubmissionAction"],
-  "allowUnspecifiedAll":true,
+  "processor": "EncounterFormProcessor",
+  "uuid": "12de5bc5-352e-4faf-9961-a2125085a75c",
+  "referencedForms": [],
+  "encounterType": "2549af50-75c8-4aeb-87ca-4bb2cef6c69a",
+  "postSubmissionActions": [
+    "PTrackerSubmissionAction",
+    "ArtSubmissionAction"
+  ],
+  "allowUnspecifiedAll": true,
   "formOptions": {
     "usePreviousValueDisabled": "true"
   }
