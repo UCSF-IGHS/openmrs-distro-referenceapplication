@@ -704,8 +704,13 @@
               "id": "transfer_out_to",
               "questionOptions": {
                 "concept": "159495AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "encounter-location",
-                "locationTag": "8d4626ca-7abd-42ad-be48-56767bbcf272"
+                "rendering": "ui-select-extended",
+                "datasource": {
+                  "name": "location_datasource",
+                  "config": {
+                    "tag": "8d4626ca-7abd-42ad-be48-56767bbcf272"
+                  }
+                }
               },
               "behaviours": [
                 {
