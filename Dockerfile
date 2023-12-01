@@ -24,7 +24,6 @@ RUN cp -R /openmrs_distro/distro/target/sdk-distro/web/owa /openmrs/distribution
 
 RUN cp distro/initializer-2.6.0-SNAPSHOT.omod /openmrs/distribution/openmrs_modules
 RUN cp distro/namibia-1.5.omod /openmrs/distribution/openmrs_modules
-RUN cp distro/namibiareports-1.0.0-SNAPSHOT.omod /openmrs/distribution/openmrs_modules
 
 # Clean up after copying needed artifacts
 RUN mvn clean $MVN_ARGS_SETTINGS
