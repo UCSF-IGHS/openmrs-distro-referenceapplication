@@ -39,13 +39,6 @@
       "src": "namibia_ohri_logo_darkbg.png"
     }
   },
-  "@openmrs/esm-active-visits-app": {
-    "Display conditions": {
-      "privileges": [
-        "Manage Privileges"
-      ]
-    }
-  },
   "@ohri/openmrs-esm-ohri-core-app": {
     "extensionSlots": {
       "dashboard-links-slot": {
