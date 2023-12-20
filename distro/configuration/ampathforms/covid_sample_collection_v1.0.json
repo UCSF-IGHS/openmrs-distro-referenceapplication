@@ -5,68 +5,26 @@
   "retired": false,
   "pages": [
     {
-      "label": "Lab Order",
-      "sections": [
+      "label": "",
+      "sections": [],
+      "isSubform": "true",
+      "subform": {
+        "name": "COVID Lab Order Form",
+        "package": "covid",
+        "behaviours": [
+          {
+            "intent": "*",
+            "subform_intent": "COVID_LAB_ORDER_EMBED",
+            "readonly": "true"
+          }
+        ]
+      },
+      "behaviours": [
         {
-          "label": "Lab Order Details",
-          "isExpanded": "true",
-          "questions": [
-            {
-              "label": "Order date",
-              "type": "obs",
-              "questionOptions": {
-                "rendering": "date",
-                "concept": "162078AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "weeksList": ""
-              },
-              "id": "testOrderDate",
-              "behaviours": [
-                {
-                  "intent": "*",
-                  "required": "false",
-                  "unspecified": "true",
-                  "readonly": "true",
-                  "hide": {
-                    "hideWhenExpression": "false"
-                  },
-                  "validators": []
-                }
-              ]
-            },
-            {
-              "label": "Test requested",
-              "type": "obs",
-              "questionOptions": {
-                "rendering": "radio",
-                "concept": "069f6dfe-88c1-4a45-a894-0d99549c8718",
-                "answers": [
-                  {
-                    "concept": "165840AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Diagnostic PCR Test",
-                    "conceptMappings": []
-                  },
-                  {
-                    "concept": "165852AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Rapid Antigen Test",
-                    "conceptMappings": []
-                  }
-                ]
-              },
-              "id": "testRequested",
-              "behaviours": [
-                {
-                  "intent": "*",
-                  "required": "false",
-                  "unspecified": "true",
-                  "readonly": "true",
-                  "hide": {
-                    "hideWhenExpression": "false"
-                  },
-                  "validators": []
-                }
-              ]
-            }
-          ]
+          "intent": "COVID_SAMPLE_COLLECTION_EMBED",
+          "hide": {
+            "hideWhenExpression": "true"
+          }
         }
       ]
     },
@@ -95,6 +53,15 @@
               "behaviours": [
                 {
                   "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "false"
+                  },
+                  "validators": []
+                },
+                {
+                  "intent": "COVID_SAMPLE_COLLECTION_EMBED",
                   "required": "true",
                   "unspecified": "true",
                   "hide": {
@@ -143,6 +110,15 @@
                     "hideWhenExpression": "false"
                   },
                   "validators": []
+                },
+                {
+                  "intent": "COVID_SAMPLE_COLLECTION_EMBED",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "false"
+                  },
+                  "validators": []
                 }
               ]
             },
@@ -166,6 +142,15 @@
                   "behaviours": [
                     {
                       "intent": "*",
+                      "required": "true",
+                      "unspecified": "true",
+                      "hide": {
+                        "hideWhenExpression": "!includes('specimenType','5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+                      },
+                      "validators": []
+                    },
+                    {
+                      "intent": "COVID_SAMPLE_COLLECTION_EMBED",
                       "required": "true",
                       "unspecified": "true",
                       "hide": {
@@ -198,6 +183,15 @@
               "behaviours": [
                 {
                   "intent": "*",
+                  "required": "false",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "false"
+                  },
+                  "validators": []
+                },
+                {
+                  "intent": "COVID_SAMPLE_COLLECTION_EMBED",
                   "required": "false",
                   "unspecified": "true",
                   "hide": {
@@ -293,6 +287,15 @@
                     "hideWhenExpression": "false"
                   },
                   "validators": []
+                },
+                {
+                  "intent": "COVID_SAMPLE_COLLECTION_EMBED",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "false"
+                  },
+                  "validators": []
                 }
               ]
             },
@@ -314,6 +317,13 @@
               "behaviours": [
                 {
                   "intent": "*",
+                  "hide": {
+                    "hideWhenExpression": "!includes('isSpecimenSentToLab', '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+                  },
+                  "validators": []
+                },
+                {
+                  "intent": "COVID_SAMPLE_COLLECTION_EMBED",
                   "hide": {
                     "hideWhenExpression": "!includes('isSpecimenSentToLab', '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
                   },
@@ -349,6 +359,70 @@
                     "hideWhenExpression": "false"
                   },
                   "validators": []
+                },
+                {
+                  "intent": "COVID_SAMPLE_COLLECTION_EMBED",
+                  "required": "false",
+                  "unspecified": "false",
+                  "hide": {
+                    "hideWhenExpression": "false"
+                  },
+                  "validators": []
+                }
+              ]
+            },
+            {
+              "label": "Status",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "fixed-value",
+                "concept": "6681366c-2174-489a-b951-13a1404935bf",
+                "conceptMappings": [
+                  {
+                    "type": "OCT",
+                    "value": "LabOrderStatus"
+                  }
+                ],
+                "answers": [
+                  {
+                    "concept": "162866AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Pending status",
+                    "conceptMappings": [
+                      {
+                        "type": "CIEL",
+                        "value": "162866"
+                      },
+                      {
+                        "type": "SNOMED-CT",
+                        "value": "307824009"
+                      },
+                      {
+                        "type": "CIEL",
+                        "value": "162866"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "id": "labOrderStatus",
+              "behaviours": [
+                {
+                  "intent": "*",
+                  "required": "false",
+                  "unspecified": "false",
+                  "hide": {
+                    "hideWhenExpression": "false"
+                  },
+                  "value": "162866AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                },
+                {
+                  "intent": "COVID_SAMPLE_COLLECTION_EMBED",
+                  "required": "false",
+                  "unspecified": "false",
+                  "hide": {
+                    "hideWhenExpression": "false"
+                  },
+                  "value": "162866AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                 }
               ]
             }
