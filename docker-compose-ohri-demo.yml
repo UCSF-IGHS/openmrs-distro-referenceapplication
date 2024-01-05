@@ -2,15 +2,15 @@ version: "3.7"
 
 services:
   gateway:
-    image: histacoohri/ohri-demo-proxy:next
+    image: histacoohri/ohri-demo-proxy:latest
     depends_on:
       - frontend
       - backend
     ports:
-      - "80:80"
+      - "8083:80"
 
   frontend:
-    image: histacoohri/ohri-demo-frontend:next
+    image: histacoohri/ohri-demo-frontend:latest
     environment:
       SPA_PATH: /openmrs/spa
       API_URL: /openmrs
@@ -20,12 +20,9 @@ services:
       timeout: 10s
     depends_on:
       - backend
-    # OHRI customizations
-    #volumes:
-    #  - ./frontend/ohri-config.json:/usr/share/nginx/html/ohri-config.json
 
   backend:
-    image: histacoohri/ohri-demo-backend-2_6:next
+    image: histacoohri/ohri-demo-backend-2_6:latest
     depends_on:
       - db
     environment:
@@ -64,3 +61,9 @@ services:
 volumes:
   ohri-openmrs-data: ~
   ohri-db-data: ~
+
+
+networks:
+  default:
+    external: true
+    name: ohri
