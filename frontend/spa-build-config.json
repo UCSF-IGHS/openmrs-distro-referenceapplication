@@ -19,7 +19,7 @@
     "@openmrs/esm-patient-lists-app": "latest",
     "@openmrs/esm-patient-medications-app": "latest",
     "@openmrs/esm-patient-notes-app": "latest",
-    "@openmrs/esm-patient-orders-app": "latest",
+    "@openmrs/esm-patient-orders-app": "next",
     "@openmrs/esm-patient-programs-app": "latest",
     "@openmrs/esm-patient-vitals-app": "latest",
     "@openmrs/esm-active-visits-app": "latest",
