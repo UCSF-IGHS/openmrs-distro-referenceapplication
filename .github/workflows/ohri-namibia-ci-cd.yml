@@ -161,7 +161,7 @@ jobs:
         - name: webfactory/ssh-agent
           uses: webfactory/ssh-agent@v0.8.0
           with:
-            ssh-private-key: ${{ secrets.LL_SSH_PRIVATE_KEY }}
+            ssh-private-key: ${{ secrets.OHRI_SSH_PRIVATE_KEY }}
 
         - name: Check SSH to remote OHRI Dev status
           run: |
@@ -174,7 +174,7 @@ jobs:
         - name: webfactory/ssh-agent
           uses: webfactory/ssh-agent@v0.8.0
           with:
-            ssh-private-key: ${{ secrets.LL_SSH_PRIVATE_KEY }}
+            ssh-private-key: ${{ secrets.OHRI_SSH_PRIVATE_KEY }}
 
         - name: SSH to remote OHRI Dev server 
           run: | 
@@ -196,7 +196,7 @@ jobs:
       - name: webfactory/ssh-agent
         uses: webfactory/ssh-agent@v0.8.0
         with:
-          ssh-private-key: ${{ secrets.LL_SSH_PRIVATE_KEY }}
+          ssh-private-key: ${{ secrets.OHRI_SSH_PRIVATE_KEY }}
 
       - name: SSH to remote OHRI Dev server via jump host
         run: |
@@ -230,7 +230,7 @@ jobs:
       - name: webfactory/ssh-agent
         uses: webfactory/ssh-agent@v0.8.0
         with:
-          ssh-private-key: ${{ secrets.LL_SSH_PRIVATE_KEY }}
+          ssh-private-key: ${{ secrets.OHRI_SSH_PRIVATE_KEY }}
 
       - name: Check SSH to remote OHRI Dev status
         run: |
@@ -245,7 +245,7 @@ jobs:
         - name: webfactory/ssh-agent
           uses: webfactory/ssh-agent@v0.8.0
           with:
-            ssh-private-key: ${{ secrets.LL_SSH_PRIVATE_KEY }}
+            ssh-private-key: ${{ secrets.OHRI_SSH_PRIVATE_KEY }}
             
         - name: SSH to remote OHRI Dev server 
           run: | 
@@ -268,7 +268,7 @@ jobs:
         uses: webfactory/ssh-agent@v0.8.0
 
         with:
-          ssh-private-key: ${{ secrets.LL_SSH_PRIVATE_KEY }}
+          ssh-private-key: ${{ secrets.OHRI_SSH_PRIVATE_KEY }}
 
       - name: SSH to remote OHRI Dev server via jump host
         run: |
@@ -301,7 +301,7 @@ jobs:
       - name: webfactory/ssh-agent
         uses: webfactory/ssh-agent@v0.8.0
         with:
-          ssh-private-key: ${{ secrets.LL_SSH_PRIVATE_KEY }}
+          ssh-private-key: ${{ secrets.OHRI_SSH_PRIVATE_KEY }}
 
       - name: Check SSH to remote OHRI Dev status
         run: |
@@ -315,7 +315,7 @@ jobs:
         - name: webfactory/ssh-agent
           uses: webfactory/ssh-agent@v0.8.0
           with:
-            ssh-private-key: ${{ secrets.LL_SSH_PRIVATE_KEY }} 
+            ssh-private-key: ${{ secrets.OHRI_SSH_PRIVATE_KEY }} 
 
         - name: SSH to remote OHRI Dev server 
           run: | 
@@ -338,7 +338,7 @@ jobs:
           uses: webfactory/ssh-agent@v0.8.0
 
           with:
-            ssh-private-key: ${{ secrets.LL_SSH_PRIVATE_KEY }}
+            ssh-private-key: ${{ secrets.OHRI_SSH_PRIVATE_KEY }}
 
         - name: SSH to remote OHRI Dev server via jump host
           run: |
