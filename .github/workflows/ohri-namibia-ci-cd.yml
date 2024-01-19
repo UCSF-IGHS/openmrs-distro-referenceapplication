@@ -178,7 +178,7 @@ jobs:
 
         - name: SSH to remote OHRI Dev server 
           run: | 
-            ssh -o StrictHostKeyChecking=no llemos@reports.globalhealthapp.net -p 3220
+            ssh -o StrictHostKeyChecking=no ohri@reports.globalhealthapp.net -p 3220
             ls -la -t  && \
             cd /opt && \
             ls -la -t 
@@ -200,7 +200,7 @@ jobs:
 
       - name: SSH to remote OHRI Dev server via jump host
         run: |
-          ssh -o StrictHostKeyChecking=no llemos@reports.globalhealthapp.net -p 3220 "\
+          ssh -o StrictHostKeyChecking=no ohri@reports.globalhealthapp.net -p 3220 "\
           cd /opt && \
           docker compose -f docker-compose-ohri-namibia-dev.yml pull && \
           docker compose -f docker-compose-ohri-namibia-dev.yml stop && \
@@ -249,7 +249,7 @@ jobs:
             
         - name: SSH to remote OHRI Dev server 
           run: | 
-            ssh -o StrictHostKeyChecking=no llemos@reports.globalhealthapp.net -p 3221
+            ssh -o StrictHostKeyChecking=no ohri@reports.globalhealthapp.net -p 3221
             ls -la -t  && \
             cd /opt && \
             ls -la -t 
@@ -272,7 +272,7 @@ jobs:
 
       - name: SSH to remote OHRI Dev server via jump host
         run: |
-            ssh -o StrictHostKeyChecking=no llemos@reports.globalhealthapp.net -p 3221
+            ssh -o StrictHostKeyChecking=no ohri@reports.globalhealthapp.net -p 3221
               "cd /opt && \
               docker compose -f docker-compose-ohri-namibia-working.yml pull && \
               docker compose -f docker-compose-ohri-namibia-working.yml stop && \
@@ -319,7 +319,7 @@ jobs:
 
         - name: SSH to remote OHRI Dev server 
           run: | 
-            ssh -o StrictHostKeyChecking=no llemos@reports.globalhealthapp.net -p 2202
+            ssh -o StrictHostKeyChecking=no ohri@reports.globalhealthapp.net -p 2202
             ls -la -t  && \
             cd /opt && \
             ls -la -t 
@@ -342,7 +342,7 @@ jobs:
 
         - name: SSH to remote OHRI Dev server via jump host
           run: |
-              ssh -o StrictHostKeyChecking=no llemos@reports.globalhealthapp.net -p 2202
+              ssh -o StrictHostKeyChecking=no ohri@reports.globalhealthapp.net -p 2202
                 "cd /opt && \
                 docker compose -f docker-compose-ohri-namibia-demo.yml pull && \
                 docker compose -f docker-compose-ohri-namibia-demo.yml stop && \
