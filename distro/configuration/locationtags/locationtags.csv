@@ -1,0 +1,8 @@
+Uuid,Void/Retire,Name,Description
+b8bbf83e-645f-451f-8efe-a0db56f09676,,Login Location,"When a user logs in and chooses a session location, they may only choose one with this tag",
+a2327745-2970-4752-ac8a-dd0ba131f40e,,Facility Location,
+1c783dca-fd54-4ea8-a0fc-2875374e9cb6,,Admission Location,"Patients may only be admitted to inpatient care in a location with this tag",
+6154fe0b-1f2c-11ee-ab9a-0242ac140002,,Appointment Location,"When a user user creates a appointment service and chooses a location, they may only choose one with this tag",
+c9a8fa19-5001-4e17-9917-fb855e877fa8,,Delivery Location,"A location that provides maternity services",
+8d4626ca-7abd-42ad-be48-56767bbcf272,,Transfer Location,"Patients may only be transferred (within the hospital) to a location with this tag",
+37dd4458-dc9e-4ae6-a1f1-789c1162d37b,,Visit Location,"Visits are only allowed to happen at locations tagged with this location tag or at locations that descend from a location tagged with this tag.",
