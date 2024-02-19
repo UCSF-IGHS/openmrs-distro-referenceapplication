@@ -614,9 +614,7 @@
               "id": "art_number",
               "questionOptions": {
                 "concept": "164402AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number",
-                "max": "99999999999999",
-                "min": "100000000000"
+                "rendering": "number"
               },
               "behaviours": [
                 {
@@ -624,7 +622,14 @@
                   "unspecified": "true",
                   "hide": {
                     "hideWhenExpression": "!isEmpty(latest_art_number) ? true : isEmpty(latest_art_number) && latest_art_initiation == '160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_art_initiation == '160120AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? false : isEmpty(art_initiation) || art_initiation == '160018AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || art_initiation == '1754AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || art_initiation =='54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test == 'd18fa331-f158-47d0-b344-cf147c7125a4' || hiv_test == '54b96458-6585-4c4c-a5b1-b3ca7f1be351' || hiv_test_result == '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || hiv_test_result == '54b96458-6585-4c4c-a5b1-b3ca7f1be351'"
-                  }
+                  },
+                  "validators": [
+                    {
+                      "type": "js_expression",
+                      "failsWhenExpression": "!/^[0-9]{3,5}[0,1][0-9]{8}$$/.test(myValue)",
+                      "message": "Invalid art number, provide an art number that follows this format: 3-5 digits for the facility code, followed by the month and year (MMYY), and ending with 5 digits for the sequential number"
+                    }
+                  ]
                 }
               ]
             },
@@ -1204,10 +1209,7 @@
   "uuid": "12de5bc5-352e-4faf-9961-a2125085a75c",
   "referencedForms": [],
   "encounterType": "2549af50-75c8-4aeb-87ca-4bb2cef6c69a",
-  "postSubmissionActions": [
-    "PTrackerSubmissionAction",
-    "ArtSubmissionAction"
-  ],
+  "postSubmissionActions": ["PTrackerSubmissionAction", "ArtSubmissionAction"],
   "allowUnspecifiedAll": true,
   "formOptions": {
     "usePreviousValueDisabled": "true"
