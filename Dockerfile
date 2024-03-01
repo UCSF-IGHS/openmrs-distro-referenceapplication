@@ -23,7 +23,7 @@ RUN cp -R /openmrs_distro/distro/target/sdk-distro/web/owa /openmrs/distribution
 #Include Custom Modules for Namibia Distro
 
 RUN cp distro/initializer-2.6.0-SNAPSHOT.omod /openmrs/distribution/openmrs_modules
-RUN cp distro/namibia-1.5.omod /openmrs/distribution/openmrs_modules
+RUN cp distro/namibia-1.5.1.omod /openmrs/distribution/openmrs_modules
 RUN cp distro/namibiareports-1.0.0-SNAPSHOT.omod /openmrs/distribution/openmrs_modules
 RUN cp distro/adminui-1.7.0-SNAPSHOT.omod /openmrs/distribution/openmrs_modules
 
