@@ -1,0 +1,26 @@
+{
+  "frontendModules": {
+    "@openmrs/esm-login-app": "next",
+    "@openmrs/esm-primary-navigation-app": "next",
+    "@openmrs/esm-implementer-tools-app": "next",
+    "@openmrs/esm-home-app": "next",
+    "@openmrs/esm-patient-allergies-app": "next",
+    "@openmrs/esm-patient-notes-app": "next",
+    "@openmrs/esm-patient-banner-app": "next",
+    "@openmrs/esm-patient-appointments-app": "next",
+    "@openmrs/esm-patient-forms-app": "next",
+    "@openmrs/esm-patient-test-results-app": "next",
+    "@openmrs/esm-patient-chart-app": "next",
+    "@openmrs/esm-patient-search-app": "next",
+    "@openmrs/esm-patient-list-app": "next",
+    "@openmrs/esm-patient-registration-app": "next",
+    "@openmrs/esm-form-builder-app": "next",
+    "@openmrs/esm-active-visits-app": "next",
+    "@ohri/openmrs-esm-ohri-core-app": "next",
+    "@ohri/openmrs-esm-ohri-form-render-app": "next",
+    "@ohri/openmrs-esm-ohri-pmtct": "next",
+    "@ohri/esm-namibia-emr-app": "next",
+    "@openmrs/esm-devtools-app": "next"
+  },
+  "excludedFrontendModules": []
+}

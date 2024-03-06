@@ -464,9 +464,7 @@
               "id": "art_number",
               "questionOptions": {
                 "concept": "164402AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number",
-                "max": "99999999999999",
-                "min": "100000000000"
+                "rendering": "number"
               },
               "behaviours": [
                 {
@@ -476,7 +474,13 @@
                   "hide": {
                     "hideWhenExpression": "!isEmpty(latest_art_number) ? true : isEmpty(latest_art_number) && latest_art_initiation == '160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || latest_art_initiation == '160120AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? false : pnc_art_initiation !== '160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && pnc_art_initiation !== '160120AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
-                  "validators": []
+                  "validators": [
+                    {
+                      "type": "js_expression",
+                      "failsWhenExpression": "!/^[0-9]{3,5}[0,1][0-9]{8}$$/.test(myValue)",
+                      "message": "Invalid art number, provide an art number that follows this format: 3-5 digits for the facility code, followed by the month and year (MMYY), and ending with 5 digits for the sequential number"
+                    }
+                  ]
                 }
               ]
             },
@@ -812,9 +816,7 @@
   "uuid": "e6b67aa4-6c59-4470-8ad5-b994efeda553",
   "referencedForms": [],
   "encounterType": "269bcc7f-04f8-4ddc-883d-7a3a0d569aad",
-  "postSubmissionActions": [
-    "ArtSubmissionAction"
-  ],
+  "postSubmissionActions": ["ArtSubmissionAction"],
   "allowUnspecifiedAll": true,
   "formOptions": {
     "usePreviousValueDisabled": "true"
