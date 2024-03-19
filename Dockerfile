@@ -26,6 +26,7 @@ RUN cp distro/initializer-2.6.0-SNAPSHOT.omod /openmrs/distribution/openmrs_modu
 RUN cp distro/namibia-1.5.2.omod /openmrs/distribution/openmrs_modules
 RUN cp distro/namibiareports-1.0.0-SNAPSHOT.omod /openmrs/distribution/openmrs_modules
 RUN cp distro/adminui-1.7.0-SNAPSHOT.omod /openmrs/distribution/openmrs_modules
+RUN cp distro/reportingui-1.11.0.omod /openmrs/distribution/openmrs_modules
 
 # Clean up after copying needed artifacts
 RUN mvn clean $MVN_ARGS_SETTINGS
