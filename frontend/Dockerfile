@@ -16,7 +16,6 @@ RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} build --build-conf
 COPY namibia_ohri_logo_darkbg.png ./spa/namibia_ohri_logo_darkbg.png
 COPY namibia_ohri_logo_lightbg.png ./spa/namibia_ohri_logo_lightbg.png
 COPY ohri_logo_light.svg ./spa/ohri_logo_light.svg
-
 COPY ohri-config.json ./spa/ohri-config.json
 
 FROM nginx:1.25-alpine
