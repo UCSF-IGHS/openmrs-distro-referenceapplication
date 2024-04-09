@@ -353,7 +353,6 @@
       <groupId>org.openmrs.module</groupId>
       <artifactId>uiframework-omod</artifactId>
       <version>${uiframeworkVersion}</version>
-      <type>jar</type>
       <scope>provided</scope>
     </dependency>
 
