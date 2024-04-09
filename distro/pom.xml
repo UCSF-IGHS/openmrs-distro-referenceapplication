@@ -91,13 +91,6 @@
 
   <dependencies>
     <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>referenceapplication-config</artifactId>
-      <type>zip</type>
-      <version>${project.version}</version>
-    </dependency>
-
-    <dependency>
       <groupId>org.openmrs.web</groupId>
       <artifactId>openmrs-webapp</artifactId>
       <version>${openmrs.version}</version>
@@ -274,7 +267,7 @@
 
     <dependency>
       <groupId>org.openmrs.module</groupId>
-      <artifactId>appframework-api</artifactId>
+      <artifactId>appframework-omod</artifactId>
       <version>${appframeworkVersion}</version>
       <scope>provided</scope>
     </dependency>
