@@ -121,6 +121,13 @@
   </build>
 
   <repositories>
+
+    <repository>
+      <id>openmrs-repo-modules-jfrog</id>
+      <name>OpenMRS Modules</name>
+      <url>https://openmrs.jfrog.io/artifactory/modules/</url>
+    </repository>
+
     <repository>
       <id>openmrs-repo</id>
       <name>OpenMRS Nexus Repository</name>
