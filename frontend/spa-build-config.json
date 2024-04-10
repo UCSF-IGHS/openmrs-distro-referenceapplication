@@ -39,14 +39,15 @@
     "@ugandaemr/esm-ugandaemr-app": "next",
     "@ugandaemr/esm-login-app": "next",
     "@ugandaemr/esm-hiv-app": "next",
-    "@ugandaemr/esm-stock-management-app": "next",
     "@ugandaemr/esm-outpatient-app": "next",
     "@ugandaemr/esm-data-visualizer-app": "next",
     "@ugandaemr/esm-radiology-app": "next",
     "@ugandaemr/esm-theatre-app": "next",
     "@ugandaemr/esm-family-health-app": "next",
     "@ugandaemr/esm-patient-queues-app": "next",
-    "@ugandaemr/esm-tb-app": "next"
+    "@ugandaemr/esm-tb-app": "next",
+    "@openmrs/esm-stock-management-app": "next",
+    "@openmrs/esm-billing-app": "next"
   },
   "spaPath": "$SPA_PATH",
   "apiUrl": "$API_URL",
