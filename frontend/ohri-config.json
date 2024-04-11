@@ -144,6 +144,12 @@
     "identifiers": {
       "preferredIdentifierSource": "691eed12-c0f1-11e2-94be-8c13b969e334"
     },
+    "formUuids": {
+        "antenatal": "5255a535-2acb-3f44-bd0a-3f80595dece1",
+        "labourAndDelivery": "60252155-f40d-3084-9d8e-5b7c8fafc68a",
+        "motherPostnatal": "2105c8ae-1935-375c-a7cc-e2ca04c8f6be",
+        "infantPostnatal": "120048e5-4122-3c6d-8f77-c79e75b7b3fc"
+    },
     "encounterTypes": {
       "antenatal": "2549af50-75c8-4aeb-87ca-4bb2cef6c69a",
       "laborAndDelivery": "2678423c-0523-4d76-b0da-18177b439eed",
