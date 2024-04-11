@@ -6,7 +6,6 @@
     "@openmrs/esm-patient-appointments-app": "next",
     "@openmrs/esm-cohort-builder-app": "next",
     "@ugandaemr/esm-patient-programs-app": "next",
-    "@openmrs/esm-patient-test-results-app": "next",
     "@ugandaemr/esm-hiv-app": "next",
     "@ugandaemr/esm-outpatient-app": "next",
     "@openmrs/esm-appointments-app": "next",
