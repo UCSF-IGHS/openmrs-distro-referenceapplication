@@ -1,7 +1,9 @@
 {
   "@openmrs/esm-login-app": {
     "logo": {
-      "src": "https://poc-test-builds.fra1.digitaloceanspaces.com/@brand/logo_with_tagline.svg"
+      "src": "/openmrs/spa/logo_with_tagline.svg",
+      "name": "Ampath logo",
+      "alt": "AMPATH logo"
     }
   },
   "@openmrs/esm-primary-navigation-app": {
