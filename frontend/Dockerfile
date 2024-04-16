@@ -16,7 +16,13 @@ ARG CACHE_BUST
 RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} assemble --manifest --mode config --config spa-assemble-config.json --target ./spa
 RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} build --build-config spa-build-config.json --target ./spa
 RUN if [ ! -f ./spa/index.html ]; then echo 'Build failed. Please check the logs above for details. This may have happened because of an update to a library that OpenMRS depends on.'; exit 1; fi
+COPY images/ampath-logo.png ./spa/images/ampath-logo.png
+COPY images/favicon.ico ./spa/images/favicon.ico
+COPY images/logo.png ./spa/images/logo.png
+COPY images/logo_with_tagline.svg ./spa/images/logo_with_tagline.svg
+COPY images/logoo.png ./spa/images/logoo.png
 COPY ohri-config.json ./spa/ohri-config.json
+COPY config.json ./spa/config.json
 
 #--------------------------------------------
 # Runtime Stage - Published Image
