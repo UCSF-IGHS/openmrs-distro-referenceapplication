@@ -20,6 +20,7 @@ COPY images/ampath-logo.png ./spa/images/ampath-logo.png
 COPY images/favicon.ico ./spa/images/favicon.ico
 COPY images/logo.png ./spa/images/logo.png
 COPY images/logo_with_tagline.svg ./spa/images/logo_with_tagline.svg
+COPY images/logo_white.svg ./spa/images/logo_white.svg
 COPY images/logoo.png ./spa/images/logoo.png
 COPY config.json ./spa/config.json
 

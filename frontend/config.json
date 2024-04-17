@@ -8,7 +8,7 @@
   },
   "@openmrs/esm-primary-navigation-app": {
     "logo": {
-      "src": "https://poc-test-builds.fra1.digitaloceanspaces.com/@brand/logo_white.svg",
+      "src": "images/logo_white.svg",
       "name": "Ampath POC"
     }
   },
@@ -57,7 +57,7 @@
       }
     },
     "logo": {
-      "src": "https://poc-test-builds.fra1.digitaloceanspaces.com/@brand/logo_white.svg"
+      "src": "images/logo_white.svg"
     },
     "Translation overrides": {
       "en": {
