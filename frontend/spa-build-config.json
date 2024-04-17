@@ -9,7 +9,6 @@
     "@ugandaemr/esm-hiv-app": "next",
     "@ugandaemr/esm-outpatient-app": "next",
     "@openmrs/esm-appointments-app": "next",
-    "@openmrs/esm-form-entry-app": "next",
     "@ugandaemr/esm-data-visualizer-app": "next",
     "@ugandaemr/esm-theatre-app": "next",
     "@openmrs/esm-devtools-app": "next",
@@ -45,8 +44,9 @@
     "@ohri/openmrs-esm-ohri-form-render-app": "next",
     "@ugandaemr/esm-ugandaemr-exchange-app": "next",
     "@openmrs/esm-billing-app": "next",
-    "@ohri/openmrs-esm-ohri-core-app": "next",
-    "@ohri/openmrs-esm-ohri-opd-app": "next"
+    "@ohri/openmrs-esm-ohri-opd-app": "next",
+    "@openmrs/esm-form-engine-app": "next",
+    "@openmrs/esm-patient-labs-app": "next"
   },
   "spaPath": "$SPA_PATH",
   "apiUrl": "$API_URL",
