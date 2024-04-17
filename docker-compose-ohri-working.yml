@@ -14,7 +14,7 @@ services:
     environment:
       SPA_PATH: /openmrs/spa
       API_URL: /openmrs
-      SPA_CONFIG_URLS: /openmrs/spa/ohri-config.json
+      SPA_CONFIG_URLS: /openmrs/spa/config.json
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost/"]
       timeout: 10s
@@ -22,7 +22,7 @@ services:
       - backend
     # OHRI customizations
     #volumes:
-    #  - ./frontend/ohri-config.json:/usr/share/nginx/html/ohri-config.json
+    #  - ./frontend/config.json:/usr/share/nginx/html/config.json
 
   backend:
     image: histacoohri/ohri-working-backend-2_6:next
