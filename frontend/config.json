@@ -29,7 +29,7 @@
     "showRecommendedFormsTab": true,
     "showHtmlFormEntryForms": false
   },
-  "@openmrs/esm-patient-chart-app": {
+  "@ohri/esm-patient-chart-app": {
     "showServiceQueueFields": true,
     "showUpcomingAppointments": true,
     "extensionSlots": {
