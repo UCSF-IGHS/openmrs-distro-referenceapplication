@@ -39,8 +39,11 @@
     "@openmrs/esm-patient-appointments-app": "next",
     "@openmrs/esm-patient-programs-app": "next",
     "@ohri/openmrs-esm-ohri-hiv-app": "next",
-    "@openmrs/esm-patient-chart-app": "next",
-    "@openmrs/esm-form-engine-app": "next"
+    "@openmrs/esm-form-engine-app": "next",
+    "@ohri/esm-patient-chart-app": "next",
+    "@openmrs/esm-form-entry-app": "next",
+    "@openmrs/esm-billing-app": "next",
+    "@ohri/openmrs-esm-ohri-opd-app": "next"
   },
   "excludedFrontendModules": []
 }

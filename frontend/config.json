@@ -1,7 +1,7 @@
 {
   "@openmrs/esm-login-app": {
     "logo": {
-      "src": "/openmrs/spa/logo_with_tagline.svg",
+      "src": "images/logo_with_tagline.svg",
       "name": "Ampath logo",
       "alt": "AMPATH logo"
     }
