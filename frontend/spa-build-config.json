@@ -42,6 +42,7 @@
     "@ugandaemr/esm-ugandaemr-exchange-app": "next",
     "@openmrs/esm-billing-app": "next",
     "@ohri/openmrs-esm-ohri-opd-app": "next",
+    "@openmrs/esm-active-visits-app": "next",
     "@openmrs/esm-form-engine-app": "next",
     "@openmrs/esm-patient-labs-app": "next"
   },
