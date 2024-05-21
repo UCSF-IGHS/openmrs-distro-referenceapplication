@@ -36,7 +36,7 @@
 
     <!-- this is request for the OCL UI -->
     <owa.version>1.14.0</owa.version>
-    <attachments.version>3.0.0</attachments.version>
+    <attachments.version>3.2.0-SNAPSHOT</attachments.version>
 
     <!--  OpenMRS Vanilla Clean installation  -->
     <!-- <referencedemodata.version>2.1.0-SNAPSHOT</referencedemodata.version> -->
