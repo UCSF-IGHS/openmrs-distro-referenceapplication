@@ -9,7 +9,6 @@
     "@openmrs/esm-patient-banner-app": "next",
     "@openmrs/esm-patient-appointments-app": "next",
     "@openmrs/esm-patient-forms-app": "next",
-    "@openmrs/esm-patient-test-results-app": "next",
     "@openmrs/esm-patient-chart-app": "next",
     "@openmrs/esm-patient-search-app": "next",
     "@openmrs/esm-patient-list-app": "next",
@@ -20,7 +19,9 @@
     "@ohri/openmrs-esm-ohri-form-render-app": "next",
     "@ohri/openmrs-esm-ohri-pmtct": "next",
     "@ohri/esm-namibia-emr-app": "next",
-    "@openmrs/esm-devtools-app": "next"
+    "@openmrs/esm-devtools-app": "next",
+    "@openmrs/esm-form-engine-app": "next",
+    "@openmrs/esm-form-entry-app": "next"
   },
   "excludedFrontendModules": []
 }
