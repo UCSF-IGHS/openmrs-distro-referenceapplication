@@ -69,6 +69,7 @@
     <uicommons.version>2.19.0</uicommons.version>
     <uiframework.version>3.22.0</uiframework.version>
     <uilibrary.version>2.0.7</uilibrary.version>
+    <o3forms.version>2.2.0</o3forms.version>
   </properties>
 
   <dependencies>
@@ -330,6 +331,12 @@
       <groupId>org.openmrs.module</groupId>
       <artifactId>uilibrary-omod</artifactId>
       <version>${uilibrary.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>o3forms-omod</artifactId>
+      <version>${o3forms.version}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
