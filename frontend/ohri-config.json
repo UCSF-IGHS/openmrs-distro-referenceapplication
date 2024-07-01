@@ -50,6 +50,16 @@
     }
   },
   "@openmrs/esm-patient-registration-app": {
+    "Translation overrides": {
+      "en": {
+        "relationshipsSection": "Create relationship",
+        "relationshipPlaceholder": "Create relationship",
+        "relationship": "Relationship type",
+        "addRelationshipButtonText": "Create relationship",
+        "searchAddress": "Search Country - District",
+        "region": "Region"
+      }
+    },
     "fieldConfigurations": {
       "address": {
         "useAddressHierarchy": {
