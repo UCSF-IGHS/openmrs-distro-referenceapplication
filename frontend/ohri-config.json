@@ -50,16 +50,6 @@
     }
   },
   "@openmrs/esm-patient-registration-app": {
-    "Translation overrides": {
-      "en": {
-        "relationshipsSection": "Create relationship",
-        "relationshipPlaceholder": "Create relationship",
-        "relationship": "Relationship type",
-        "addRelationshipButtonText": "Create relationship",
-        "searchAddress": "Search Country - District",
-        "region": "Region"
-      }
-    },
     "fieldConfigurations": {
       "address": {
         "useAddressHierarchy": {
@@ -131,10 +121,9 @@
       "en": {
         "poweredBy": "PTracker Version 1.5 Powered by"
       }
-    },
-    "partnerLogos": ["ohri_logo_light.svg"]
+    }
   },
-  "@ohri/openmrs-esm-ohri-pmtct": {
+  "@ohri/openmrs-esm-ohri-pmtct-app": {
     "identifiers": {
       "preferredIdentifierSource": "691eed12-c0f1-11e2-94be-8c13b969e334"
     },
