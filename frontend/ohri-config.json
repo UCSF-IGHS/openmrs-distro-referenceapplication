@@ -138,16 +138,20 @@
       "preferredIdentifierSource": "691eed12-c0f1-11e2-94be-8c13b969e334"
     },
     "formUuids": {
-      "antenatal": "5255a535-2acb-3f44-bd0a-3f80595dece1",
-      "labourAndDelivery": "60252155-f40d-3084-9d8e-5b7c8fafc68a",
-      "motherPostnatal": "2105c8ae-1935-375c-a7cc-e2ca04c8f6be",
-      "infantPostnatal": "120048e5-4122-3c6d-8f77-c79e75b7b3fc"
+      "antenatalFormUuid": "5255a535-2acb-3f44-bd0a-3f80595dece1",
+      "labourAndDeliveryFormUuid": "60252155-f40d-3084-9d8e-5b7c8fafc68a",
+      "motherPostnatalFormUuid": "2105c8ae-1935-375c-a7cc-e2ca04c8f6be",
+      "infantPostnatalFormUuid": "120048e5-4122-3c6d-8f77-c79e75b7b3fc"
     },
     "encounterTypes": {
-      "antenatal": "2549af50-75c8-4aeb-87ca-4bb2cef6c69a",
-      "laborAndDelivery": "2678423c-0523-4d76-b0da-18177b439eed",
-      "infantPostnatal": "af1f1b24-d2e8-4282-b308-0bf79b365584",
-      "motherPostnatal": "269bcc7f-04f8-4ddc-883d-7a3a0d569aad"
+      "antenatalEncounterType": "2549af50-75c8-4aeb-87ca-4bb2cef6c69a",
+      "laborAndDeliveryEncounterType": "2678423c-0523-4d76-b0da-18177b439eed",
+      "infantPostnatalEncounterType": "af1f1b24-d2e8-4282-b308-0bf79b365584",
+      "motherPostnatalEncounterType": "269bcc7f-04f8-4ddc-883d-7a3a0d569aad"
+    },
+    "identifiersTypes": {
+      "ptrackerIdentifierType": "4da0a3fe-e546-463f-81fa-084f098ff06c",
+      "artUniqueNumberType": "9d6d1eec-2cd6-4637-a981-4a46b4b8b41f"
     }
   },
   "@openmrs/esm-home-app": {
