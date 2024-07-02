@@ -15,9 +15,9 @@
     "@openmrs/esm-patient-registration-app": "next",
     "@openmrs/esm-form-builder-app": "next",
     "@openmrs/esm-active-visits-app": "next",
-    "@ohri/openmrs-esm-ohri-core-app": "2.3.2-pre.382",
-    "@ohri/openmrs-esm-ohri-form-render-app": "2.3.2-pre.382",
-    "@ohri/openmrs-esm-ohri-pmtct-app": "2.3.2-pre.382",
+    "@ohri/openmrs-esm-ohri-core-app": "2.3.2-pre.394",
+    "@ohri/openmrs-esm-ohri-form-render-app": "2.3.2-pre.394",
+    "@ohri/openmrs-esm-ohri-pmtct-app": "2.3.2-pre.394",
     "@ohri/esm-namibia-emr-app": "next",
     "@openmrs/esm-devtools-app": "next",
     "@openmrs/esm-form-engine-app": "next"
