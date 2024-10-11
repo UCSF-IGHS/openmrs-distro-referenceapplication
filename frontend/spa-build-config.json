@@ -15,7 +15,7 @@
     "@openmrs/esm-patient-conditions-app": "6.1.1-pre.3293",
     "@openmrs/esm-patient-forms-app": "6.1.1-pre.3293",
     "@openmrs/esm-patient-flags-app": "6.1.1-pre.3293",
-    "@openmrs/esm-patient-labs-app": "6.1.1-pre.3293",
+    "@openmrs/esm-patient-tests-app": "6.1.1-pre.3293",
     "@openmrs/esm-patient-lists-app": "6.1.1-pre.3293",
     "@openmrs/esm-patient-medications-app": "6.1.1-pre.3293",
     "@openmrs/esm-patient-notes-app": "6.1.1-pre.3293",
