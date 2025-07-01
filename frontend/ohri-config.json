@@ -1,16 +1,379 @@
 {
   "@openmrs/esm-patient-chart-app": {
-    "notesConceptUuids": ["161011AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "437d1e25-e7ab-481c-aabc-01f21c6cdef1"],
+    "notesConceptUuids": [
+      "161011AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "437d1e25-e7ab-481c-aabc-01f21c6cdef1"
+    ],
     "logo": {
       "src": "ohri_logo_dark.svg"
+    },
+    "extensionSlots": {
+      "patient-chart-dashboard-slot": {
+        "add": [
+          "nav-group#HIVCareTreatment",
+          "nav-group#HIVPrevention",
+          "nav-group#TPTProgram",
+          "nav-group#TBProgram",
+          "nav-group#Covid",
+          "nav-group#opd",
+          "nav-group#cacx",
+          "nav-group#pmtct"
+        ],
+        "configure": {
+          "nav-group#HIVCareTreatment": {
+            "title": "hIVCareAndTreatment",
+            "path": "hiv-care-and-treatment",
+            "slotName": "hiv-care-and-treatment-group-slot",
+            "isExpanded": false
+          },
+          "nav-group#HIVPrevention": {
+            "title": "hIVPrevention",
+            "path": "hiv-prevention",
+            "slotName": "hiv-prevention-group-slot",
+            "isExpanded": false
+          },
+          "nav-group#TPTProgram": {
+            "title": "tPTProgram",
+            "path": "tpt-program",
+            "slotName": "tpt-program-group-slot",
+            "isExpanded": false
+          },
+          "nav-group#TBProgram": {
+            "title": "tBProgram",
+            "path": "tb-program",
+            "slotName": "tb-program-group-slot",
+            "isExpanded": false
+          },
+          "nav-group#Covid": {
+            "title": "covid",
+            "path": "covid",
+            "slotName": "covid-group-slot",
+            "isExpanded": false
+          },
+          "nav-group#opd": {
+            "title": "opd",
+            "path": "opd",
+            "slotName": "opd-group-slot",
+            "isExpanded": false
+          },
+          "nav-group#cacx": {
+            "title": "cervicalCancer",
+            "path": "cervical-cancer",
+            "slotName": "cervical-cancer-group-slot",
+            "isExpanded": false
+          },
+          "nav-group#pmtct": {
+            "title": "maternalAndChildHealth",
+            "path": "pmtct",
+            "slotName": "pmtct-group-slot",
+            "isExpanded": false
+          },
+          "Translation overrides": {
+            "en": {
+              "hIVCareAndTreatment": "HIV Care And Treatment testing",
+              "hIVPrevention": "HIV Prevention",
+              "tPTProgram": "TPT Program",
+              "tBProgram": "TB Program",
+              "covid": "COVID",
+              "opd": "OPD",
+              "cervicalCancer": "Cervical Cancer",
+              "maternalAndChildHealth": "Maternal & Child Health"
+            },
+            "fr": {
+              "hIVCareAndTreatment": "Soins et traitement du VIH",
+              "hIVPrevention": "Prévention du VIH",
+              "tPTProgram": "Programme TPT",
+              "tBProgram": "Programme TB",
+              "covid": "COVID",
+              "opd": "OPD",
+              "cervicalCancer": "Cancer du col de l'utérus",
+              "maternalAndChildHealth": "Santé maternelle et infantile"
+            }
+          }
+        }
+      },
+      "hiv-care-and-treatment-group-slot": {
+        "add": [
+          "dashboard#hiv-patient-summary",
+          "dashboard#hiv-program-management",
+          "dashboard#hiv-clinical-visits",
+          "dashboard#hiv-general-counselling",
+          "dashboard#hiv-partner-notification"
+        ],
+        "configure": {
+          "dashboard#hiv-patient-summary": {
+            "title": "patientSummary",
+            "path": "hiv-patient-summary",
+            "slot": "hiv-patient-summary-dashboard-slot",
+            "moduleName": "@ohri/openmrs-esm-ohri-hiv-care-treatment-app"
+          },
+          "dashboard#hiv-program-management": {
+            "title": "programManagement",
+            "path": "hiv-program-management",
+            "slot": "program-management-summary-slot",
+            "moduleName": "@ohri/openmrs-esm-ohri-hiv-care-treatment-app"
+          },
+          "dashboard#hiv-clinical-visits": {
+            "title": "clinicalVisits",
+            "path": "hiv-clinical-visits",
+            "slot": "clinical-visits-summary-slot",
+            "moduleName": "@ohri/openmrs-esm-ohri-hiv-care-treatment-app"
+          },
+          "dashboard#hiv-general-counselling": {
+            "title": "generalCounselling",
+            "path": "hiv-general-counselling",
+            "slot": "general-counselling-summary-slot",
+            "moduleName": "@ohri/openmrs-esm-ohri-hiv-care-treatment-app"
+          },
+          "dashboard#hiv-partner-notification": {
+            "title": "partnerNotification",
+            "path": "hiv-partner-notification",
+            "slot": "partner-notification-services-slot",
+            "moduleName": "@ohri/openmrs-esm-ohri-hiv-care-treatment-app"
+          },
+          "Translation overrides": {
+            "en": {
+              "patientSummary": "Patient Summary",
+              "programManagement": "Program Management",
+              "clinicalVisits": "Clinical Visits",
+              "generalCounselling": "General Counselling",
+              "partnerNotification": "Partner Notification"
+            },
+            "fr": {
+              "patientSummary": "Résumé du patient",
+              "programManagement": "Gestion du programme",
+              "clinicalVisits": "Visites cliniques",
+              "generalCounselling": "Conseil général",
+              "partnerNotification": "Notification des partenaires"
+            }
+          }
+        }
+      },
+      "hiv-prevention-group-slot": {
+        "add": ["dashboard#hiv-testing-services"],
+        "configure": {
+          "dashboard#hiv-testing-services": {
+            "title": "hivTestingServices",
+            "path": "hiv-testing-services",
+            "slot": "hts-summary-dashboard-slot",
+            "moduleName": "@ohri/openmrs-esm-ohri-hiv-prevention-app"
+          },
+          "Translation overrides": {
+            "en": {
+              "hivTestingServices": "HIV Testing Services"
+            },
+            "fr": {
+              "hivTestingServices": "Services de test VIH"
+            }
+          }
+        }
+      },
+      "tpt-program-group-slot": {
+        "add": [
+          "dashboard#tpt-patient-summary",
+          "dashboard#tpt-program-management"
+        ],
+        "configure": {
+          "dashboard#tpt-patient-summary": {
+            "title": "tptPatientSummary",
+            "path": "tpt-patient-summary",
+            "slot": "tpt-patient-summary-slot",
+            "moduleName": "@ohri/openmrs-esm-ohri-tb-app"
+          },
+          "dashboard#tpt-program-management": {
+            "title": "tptProgramManagement",
+            "path": "tpt-program-management",
+            "slot": "tpt-program-management-summary-slot",
+            "moduleName": "@ohri/openmrs-esm-ohri-tb-app"
+          }
+        },
+        "Translation overrides": {
+          "en": {
+            "tptPatientSummary": "TPT Patient Summary",
+            "tptProgramManagement": "TPT Program Management"
+          },
+          "fr": {
+            "tptPatientSummary": "Résumé du patient TPT",
+            "tptProgramManagement": "Gestion du programme TPT"
+          }
+        }
+      },
+      "tb-program-group-slot": {
+        "add": [
+          "dashboard#tb-patient-summary",
+          "dashboard#tb-program-management",
+          "dashboard#tb-follow-up",
+          "dashboard#tb-contact-listing"
+        ],
+        "configure": {
+          "dashboard#tb-patient-summary": {
+            "title": "tbPatientSummary",
+            "path": "tb-patient-summary",
+            "slot": "tb-patient-summary-dashboard-slot",
+            "moduleName": "@ohri/openmrs-esm-ohri-tb-app"
+          },
+          "dashboard#tb-program-management": {
+            "title": "tbProgramManagement",
+            "path": "tb-program-management",
+            "slot": "tb-program-management-summary-slot",
+            "moduleName": "@ohri/openmrs-esm-ohri-tb-app"
+          },
+          "dashboard#tb-follow-up": {
+            "title": "tbFollowUp",
+            "path": "tb-follow-up",
+            "slot": "tb-treatment-follow-up-summary-slot",
+            "moduleName": "@ohri/openmrs-esm-ohri-tb-app"
+          },
+          "dashboard#tb-contact-listing": {
+            "title": "tbContactListing",
+            "path": "tb-contact-listing",
+            "slot": "tb-contact-listing-summary-slot",
+            "moduleName": "@ohri/openmrs-esm-ohri-tb-app"
+          }
+        },
+        "Translation overrides": {
+          "en": {
+            "tbPatientSummary": "TB Patient Summary",
+            "tbProgramManagement": "TB Program Management",
+            "tbFollowUp": "TB Follow Up",
+            "tbContactListing": "TB Contact Listing"
+          },
+          "fr": {
+            "tbPatientSummary": "Résumé du patient TB",
+            "tbProgramManagement": "Gestion du programme TB",
+            "tbFollowUp": "Suivi TB",
+            "tbContactListing": "Liste de contacts TB"
+          }
+        }
+      },
+      "covid-group-slot": {
+        "add": [
+          "dashboard#covid-assessments",
+          "dashboard#covid-lab-test",
+          "dashboard#covid-vaccinations"
+        ],
+        "configure": {
+          "dashboard#covid-assessments": {
+            "title": "covidAssessments",
+            "path": "covid-assessments",
+            "slot": "covid-assessments-dashboard-slot",
+            "moduleName": "@ohri/openmrs-esm-ohri-covid-app"
+          },
+          "dashboard#covid-lab-test": {
+            "title": "covidLabTest",
+            "path": "covid-lab-test",
+            "slot": "covid-lab-dashboard-slot"
+          },
+          "dashboard#covid-vaccinations": {
+            "title": "covidVaccinations",
+            "path": "covid-vaccinations",
+            "slot": "covid-vaccinations-dashboard-slot"
+          }
+        },
+        "Translation overrides": {
+          "en": {
+            "covidAssessments": "COVID Assessments",
+            "covidLabTest": "COVID Lab Test",
+            "covidVaccinations": "COVID Vaccinations"
+          },
+          "fr": {
+            "covidAssessments": "Évaluations COVID",
+            "covidLabTest": "Test de laboratoire COVID",
+            "covidVaccinations": "Vaccinations COVID"
+          }
+        }
+      },
+      "opd-group-slot": {
+        "add": ["dashboard#opd-summary"],
+        "configure": {
+          "dashboard#opd-summary": {
+            "title": "opdSummary",
+            "path": "opd-summary",
+            "slot": "opd-summary-slot",
+            "moduleName": "@ohri/openmrs-esm-ohri-opd-app"
+          }
+        },
+        "Translation overrides": {
+          "en": {
+            "opdSummary": "OPD Summary"
+          },
+          "fr": {
+            "opdSummary": "Résumé de la consultation externe"
+          }
+        }
+      },
+      "cervical-cancer-group-slot": {
+        "add": ["dashboard#cacx-summary", "dashboard#cacx-visits"],
+        "configure": {
+          "dashboard#cacx-summary": {
+            "title": "cacxSummary",
+            "path": "cacx-summary",
+            "slot": "cacx-summary-slot",
+            "moduleName": "@ohri/openmrs-esm-cervical-cancer-app"
+          },
+          "dashboard#cacx-visits": {
+            "title": "cacxVisits",
+            "path": "cacx-visits",
+            "slot": "cacx-visits-slot",
+            "moduleName": "@ohri/openmrs-esm-cervical-cancer-app"
+          }
+        },
+        "Translation overrides": {
+          "en": {
+            "cacxSummary": "Cervical Cancer Summary",
+            "cacxVisits": "Cervical Cancer Visits"
+          },
+          "fr": {
+            "cacxSummary": "Résumé du cancer du col de l'utérus",
+            "cacxVisits": "Visites pour le cancer du col de l'utérus"
+          }
+        }
+      },
+      "pmtct-group-slot": {
+        "add": [
+          "dashboard#mch-summary",
+          "dashboard#maternal-visits-summary",
+          "dashboard#child-visits-summary"
+        ],
+        "configure": {
+          "dashboard#mch-summary": {
+            "title": "mchSummary",
+            "path": "mch-summary",
+            "slot": "mch-summary-slot",
+            "moduleName": "@ohri/openmrs-esm-ohri-pmtct-app"
+          },
+          "dashboard#maternal-visits-summary": {
+            "title": "maternalVisitsSummary",
+            "path": "maternal-visits-summary",
+            "slot": "maternal-visits-summary-slot",
+            "moduleName": "@ohri/openmrs-esm-ohri-pmtct-app"
+          },
+          "dashboard#child-visits-summary": {
+            "title": "childVisitsSummary",
+            "path": "child-visits-summary",
+            "slot": "child-visits-summary-slot",
+            "moduleName": "@ohri/openmrs-esm-ohri-pmtct-app"
+          }
+        },
+        "Translation overrides": {
+          "en": {
+            "mchSummary": "MCH Summary",
+            "maternalVisitsSummary": "Maternal Visits Summary",
+            "childVisitsSummary": "Child Visits Summary"
+          },
+          "fr": {
+            "mchSummary": "Résumé de la santé maternelle et infantile",
+            "maternalVisitsSummary": "Résumé des visites maternelles",
+            "childVisitsSummary": "Résumé des visites infantiles"
+          }
+        }
+      }
     }
   },
   "@ohri/openmrs-esm-ohri-core-app": {
     "extensionSlots": {
       "ohri-dashboard-appointments-slot": {
-        "add": [
-          "clinical-appointments-dashboard"
-        ]
+        "add": ["clinical-appointments-dashboard"]
       }
     }
   },
